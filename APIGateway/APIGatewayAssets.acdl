@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asset_composite name="APIGatewayAssets" displayName="Assets for API Gateway" runtimeVersion="10.11" targetNamespace="http://namespaces.softwareag.com/webMethods/APIGateway" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
+    <buildInfo name="BuildTimestamp" value="2022-06-07T21:22:05"/>
+    <asset name="PolicyAction.91c04e9d-3861-4fb7-be47-5b25b0f9e657" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.5644490b-befd-4499-8dfa-fa11bf4d3efd" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.b0793468-775d-43f1-9d51-082f9f57f7e8" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API Test2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.7dc1361f-45ad-4b63-a612-98abaf4f6627" displayName="Policy For API mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1f6e7a16-6d76-456d-a4f5-3b7af3f9109d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.3df046b4-2462-4a3f-84b5-4e6982af7f9d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.85d9290f-232b-4ecb-a9a6-cbb9c1564297</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e22abd4f-4837-40fe-a7a2-f7ad59b38c98</dependsOn>
+    </asset>
+    <asset name="PolicyAction.85d9290f-232b-4ecb-a9a6-cbb9c1564297" displayName="Policy Action [Request Transformation] -&gt; Policy For API mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1f6e7a16-6d76-456d-a4f5-3b7af3f9109d" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.e22abd4f-4837-40fe-a7a2-f7ad59b38c98" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.3df046b4-2462-4a3f-84b5-4e6982af7f9d" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.75fba3b7-4953-4902-865b-e6bf06a25611" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-backend-people[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.05f1a122-6e6d-4bb8-89ae-ea5fcf4636de" displayName="Policy For API biofarma-backend-people[2.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.108ce9ff-5042-4755-86e2-a46755d0b9f6</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.75fba3b7-4953-4902-865b-e6bf06a25611</dependsOn>
+    </asset>
+    <asset name="PolicyAction.108ce9ff-5042-4755-86e2-a46755d0b9f6" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-backend-people[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6a77c821-c8fe-43db-952d-0a47fea9ff2b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.b1c258e2-b464-4210-bc99-7480bff1078b" displayName="test-import[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.870d5cca-6eb7-48e1-992c-d3b71ce2e49d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.870d5cca-6eb7-48e1-992c-d3b71ce2e49d" displayName="Policy For API test-import[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.9cacf363-3e56-4708-b572-d5a91b1a61de</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.aeda19da-f0db-4e19-8657-3d4908061ebb</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9cacf363-3e56-4708-b572-d5a91b1a61de" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-import[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.aeda19da-f0db-4e19-8657-3d4908061ebb" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-import[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="RegisteredApplication.EmptyRegisteredApplication" displayName="RegisteredApplication [ EmptyRegisteredApplication ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="AccessControlList.30525f5d-391a-4cb8-9a9e-cc9476e4729d" displayName="AccessControlList for asset : apps-WaBiz" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessProfile.Administrators" displayName="Administrators" isDeployable="true">
+        <implementation.generic type="AccessProfile"/>
+        <dependsOn>APIGateway:Group.API-Gateway-Administrators</dependsOn>
+        <dependsOn>APIGateway:Group.Administrators</dependsOn>
+    </asset>
+    <asset name="Group.Administrators" displayName="Administrators" isDeployable="true">
+        <implementation.generic type="Group"/>
+        <dependsOn>APIGateway:User.Administrator</dependsOn>
+    </asset>
+    <asset name="User.Administrator" displayName="Administrator" isDeployable="true">
+        <implementation.generic type="User"/>
+    </asset>
+    <asset name="Group.API-Gateway-Administrators" displayName="API-Gateway-Administrators" isDeployable="true">
+        <implementation.generic type="Group"/>
+    </asset>
+    <asset name="AccessProfile.Default" displayName="Default" isDeployable="true">
+        <implementation.generic type="AccessProfile"/>
+    </asset>
+    <asset name="PolicyAction.b3b1d74d-4103-4969-837a-2c7f5020b3f0" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-url-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.7a0d08f3-9de9-49fc-b03c-b904c5f6b5c8" displayName="AccessControlList for asset : json-api" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.fdb00815-6d40-4ebe-a50c-d26359b83a16" displayName="wa-bisnis[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.1b5fd31c-f968-435d-8ad8-eab11a12c7a9</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.1b5fd31c-f968-435d-8ad8-eab11a12c7a9" displayName="Policy For API wa-bisnis[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.330211fa-8f5f-40e7-938f-28c8bcdab8b3</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.792f1052-c851-4429-969a-375e6e2a09ee</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.ebbe8a85-04c2-4307-86cf-c9c8af20b2ec</dependsOn>
+    </asset>
+    <asset name="PolicyAction.330211fa-8f5f-40e7-938f-28c8bcdab8b3" displayName="Policy Action [Request Transformation] -&gt; Policy For API wa-bisnis[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.792f1052-c851-4429-969a-375e6e2a09ee" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API wa-bisnis[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.ebbe8a85-04c2-4307-86cf-c9c8af20b2ec" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API wa-bisnis[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.09b71a79-1aa5-4c44-9230-207d32a7b877" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API biofarma-hcm-people[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.67d75b1e-e6f4-46f9-94fc-81d7935c8f7f" displayName="test-hc_2[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.fe070969-f8a9-46aa-ba13-f5bb2f37d66f</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.fe070969-f8a9-46aa-ba13-f5bb2f37d66f" displayName="Policy For API test-hc_2[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.376cb069-9b65-456c-a31b-78eff4e19ade</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6b0c6785-da06-46f6-817c-2372f63ab7ef</dependsOn>
+    </asset>
+    <asset name="PolicyAction.6b0c6785-da06-46f6-817c-2372f63ab7ef" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-hc_2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.376cb069-9b65-456c-a31b-78eff4e19ade" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-hc_2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.ae374beb-ebdf-41d3-9119-32239039b649" displayName="AccessControlList for asset : tes" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.23d2197a-c67d-4c1e-94ba-8a77ac5daf23" displayName="AccessControlList for asset : kf-7sol-master-homecare-doctor" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b694b76f-4fc3-4d52-b115-fdb4845ae94e" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-hcm-people[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.cache" displayName="cache" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="PolicyAction.1615eb5a-70e6-46f7-bcba-170426402d4f" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API bf-smart-retail[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.5d2feb2d-1d78-4da3-9eee-203b2f9d079a" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6409fd7b-320a-42be-9590-e64f93409a28" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API new-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.cee7390b-8c2e-40f0-983c-a9ed35de2c7e" displayName="Policy For API medverse-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.558a8614-e36f-4a9a-a379-66fa09545943</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6be90b77-91c3-49f4-a041-fc97e5e4694d</dependsOn>
+    </asset>
+    <asset name="PolicyAction.558a8614-e36f-4a9a-a379-66fa09545943" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API medverse-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6be90b77-91c3-49f4-a041-fc97e5e4694d" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API medverse-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.7153cdbd-a70f-4c62-b09a-565aa3f65f20" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-master-address[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.0d64b7c8-c1b5-4584-9d21-35464cf1fbc5" displayName="Policy For API biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.37d9927b-dd06-411a-aa8b-8016bfc3c395</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.3869907e-8a7b-4a10-9ea6-86a104338793</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.4b592c55-2987-49f5-afcd-23ca47a8c762</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.7e8ae07b-7b09-4572-8d6f-995f0fb562d7</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3869907e-8a7b-4a10-9ea6-86a104338793" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.37d9927b-dd06-411a-aa8b-8016bfc3c395" displayName="Policy Action [Outbound Auth - Transport] -&gt; Policy For API biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:PassmanData.37d9927b-dd06-411a-aa8b-8016bfc3c395password</dependsOn>
+    </asset>
+    <asset name="PassmanData.37d9927b-dd06-411a-aa8b-8016bfc3c395password" displayName="37d9927b-dd06-411a-aa8b-8016bfc3c395password" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PolicyAction.7e8ae07b-7b09-4572-8d6f-995f0fb562d7" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4b592c55-2987-49f5-afcd-23ca47a8c762" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.a46b378e-7a88-4ccb-8fc7-c51bed56c707" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:Alias.67ed851a-0dad-4610-8e31-821adc8b45f1</dependsOn>
+    </asset>
+    <asset name="Alias.67ed851a-0dad-4610-8e31-821adc8b45f1" displayName="esb-dev" isDeployable="true">
+        <implementation.generic type="Alias"/>
+        <property name="Endpoint URI for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Endpoint URI for Endpoint alias esb-dev">
+            <value>https://esb.digital-healthcare.id/restv2</value>
+        </property>
+        <property name="Optimization technique for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Optimization technique for Endpoint alias esb-dev">
+            <value>None</value>
+        </property>
+        <property name="Keystore alias for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Keystore alias for Endpoint alias esb-dev">
+            <value>HTTPS_KEYSTORE</value>
+        </property>
+        <property name="Key alias for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Key alias for Endpoint alias esb-dev">
+            <value>https_keystore</value>
+        </property>
+        <property name="Connection timeout for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Connection timeout for Endpoint alias esb-dev">
+            <value>30</value>
+        </property>
+        <property name="Read timeout for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Read timeout for Endpoint alias esb-dev">
+            <value>30</value>
+        </property>
+        <property name="Pass WS-Security Headers for Endpoint alias esb-dev" many="false" isSecure="false" displayName="Pass WS-Security Headers for Endpoint alias esb-dev">
+            <value>false</value>
+        </property>
+    </asset>
+    <asset name="API.d409c9e0-3d83-44ab-9cff-5200e46cced0" displayName="test-publish[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.32293135-c0f3-4012-b785-228993468958</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.32293135-c0f3-4012-b785-228993468958" displayName="Policy For API test-publish[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.4bd7b14d-0500-4289-90a6-96f36baa59b5</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cf459495-e01b-405c-80c2-5c28501a4ae1</dependsOn>
+    </asset>
+    <asset name="PolicyAction.cf459495-e01b-405c-80c2-5c28501a4ae1" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-publish[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4bd7b14d-0500-4289-90a6-96f36baa59b5" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-publish[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.46dddeb3-1f6f-41e8-ad17-5ff7d07e2bb1" displayName="biofarma-people-menu[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.ca0148d7-55c3-4209-81c3-b23602980b6b</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.ca0148d7-55c3-4209-81c3-b23602980b6b" displayName="Policy For API biofarma-people-menu[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.54ed2840-aa59-472d-83a2-95c17e7087e8</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.5b447fde-501d-43e0-af37-12b4372917ba</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.95822345-0c16-4f39-93cd-83b506238194</dependsOn>
+    </asset>
+    <asset name="PolicyAction.95822345-0c16-4f39-93cd-83b506238194" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-people-menu[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.54ed2840-aa59-472d-83a2-95c17e7087e8" displayName="Policy Action [Log Invocation] -&gt; Policy For API biofarma-people-menu[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.5b447fde-501d-43e0-af37-12b4372917ba" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-people-menu[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.4ae438a7-898c-48c5-878e-d0793fb8f835" displayName="Policy For API biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.02f6f237-41af-4ce7-9845-511a87ee7b7e</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.520c495f-16a0-4190-a1ed-eb2b3d6d7709</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9910cf44-2e93-4e29-a5ef-024ba92fc29c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f4580571-cc63-4cc6-8040-5ebbf4ee9933</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9910cf44-2e93-4e29-a5ef-024ba92fc29c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.520c495f-16a0-4190-a1ed-eb2b3d6d7709" displayName="Policy Action [Outbound Auth - Transport] -&gt; Policy For API biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:PassmanData.520c495f-16a0-4190-a1ed-eb2b3d6d7709password</dependsOn>
+    </asset>
+    <asset name="PassmanData.520c495f-16a0-4190-a1ed-eb2b3d6d7709password" displayName="520c495f-16a0-4190-a1ed-eb2b3d6d7709password" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PolicyAction.02f6f237-41af-4ce7-9845-511a87ee7b7e" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.f4580571-cc63-4cc6-8040-5ebbf4ee9933" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.39730d85-9a7b-4449-b885-2980050e289d" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API bf-hc[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Subscription.76331d61-952a-4147-b6f8-4b5b0eb6eabb" displayName="package-hcm_test-plans_subscription" isDeployable="true">
+        <implementation.generic type="Subscription"/>
+        <dependsOn>APIGateway:Application.083fb0cd-163a-47cc-b56f-029ac55c70b3</dependsOn>
+        <dependsOn>APIGateway:Application.bb834c9f-eeea-4243-ba80-aa09645de6af</dependsOn>
+        <dependsOn>APIGateway:Package.4935379e-07bd-4c1c-a560-17f1301feafa</dependsOn>
+        <dependsOn>APIGateway:Plan.6d588d84-9a2c-480f-8572-e5b09b736544</dependsOn>
+    </asset>
+    <asset name="Plan.6d588d84-9a2c-480f-8572-e5b09b736544" displayName="test-plans" isDeployable="true">
+        <implementation.generic type="Plan"/>
+        <dependsOn>APIGateway:Policy.0b98e185-bcb7-417d-82e7-0d703cfcbd43</dependsOn>
+        <dependsOn>APIGateway:Policy.ff512844-3ea3-4454-a108-5a09a3e0d7a2</dependsOn>
+    </asset>
+    <asset name="Policy.0b98e185-bcb7-417d-82e7-0d703cfcbd43" displayName="0b98e185-bcb7-417d-82e7-0d703cfcbd43" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.ff512844-3ea3-4454-a108-5a09a3e0d7a2" displayName="ff512844-3ea3-4454-a108-5a09a3e0d7a2" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Package.4935379e-07bd-4c1c-a560-17f1301feafa" displayName="package-hcm [1.0] " isDeployable="true">
+        <implementation.generic type="Package"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+        <dependsOn>APIGateway:Plan.6d588d84-9a2c-480f-8572-e5b09b736544</dependsOn>
+        <dependsOn>APIGateway:Policy.e79b5f70-e338-4827-bffd-d3c25a15b6f9</dependsOn>
+        <dependsOn>APIGateway:Subscription.76331d61-952a-4147-b6f8-4b5b0eb6eabb</dependsOn>
+    </asset>
+    <asset name="Policy.e79b5f70-e338-4827-bffd-d3c25a15b6f9" displayName="package-hcm" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.29131b92-6ed4-4371-848e-707f5b46c09d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a1f412c8-054e-4004-8456-f73ca0622924</dependsOn>
+    </asset>
+    <asset name="PolicyAction.a1f412c8-054e-4004-8456-f73ca0622924" displayName="Policy Action [Identify &amp; Authorize] -&gt; package-hcm" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.29131b92-6ed4-4371-848e-707f5b46c09d" displayName="Policy Action [Traffic Optimization] -&gt; package-hcm" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a" displayName="biofarma-hcm-people[1.1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.083fb0cd-163a-47cc-b56f-029ac55c70b3</dependsOn>
+        <dependsOn>APIGateway:Application.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Application.bb834c9f-eeea-4243-ba80-aa09645de6af</dependsOn>
+        <dependsOn>APIGateway:Application.c40f408a-7540-402f-a9d9-5dea6961bd2c</dependsOn>
+        <dependsOn>APIGateway:Policy.435ff52c-a11c-43f6-902f-457faf1137bc</dependsOn>
+        <dependsOn>APIGateway:Policy.8be2e290-3fa2-4fa5-b657-8e7d9ecb1ed5</dependsOn>
+        <dependsOn>APIGateway:Policy.a25eac99-560e-482c-b8d2-a5ef09810355</dependsOn>
+        <dependsOn>APIGateway:Policy.a6a2a0b5-e50a-4a9a-b75f-4c3e565dfab9</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.083fb0cd-163a-47cc-b56f-029ac55c70b3</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.bb834c9f-eeea-4243-ba80-aa09645de6af</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.c40f408a-7540-402f-a9d9-5dea6961bd2c</dependsOn>
+    </asset>
+    <asset name="Policy.8be2e290-3fa2-4fa5-b657-8e7d9ecb1ed5" displayName="Policy For API biofarma-hcm-people[1.1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.09b71a79-1aa5-4c44-9230-207d32a7b877</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a2c5a4e7-0a10-4bff-80f9-c20301343ebc</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b694b76f-4fc3-4d52-b115-fdb4845ae94e</dependsOn>
+    </asset>
+    <asset name="PolicyAction.a2c5a4e7-0a10-4bff-80f9-c20301343ebc" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-hcm-people[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.435ff52c-a11c-43f6-902f-457faf1137bc" displayName="Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Relation_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.4c3a8927-8aab-49cb-966a-be7501674f7d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.95caeaca-909e-4655-9125-1982a1408d69</dependsOn>
+    </asset>
+    <asset name="PolicyAction.4c3a8927-8aab-49cb-966a-be7501674f7d" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Relation_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+    </asset>
+    <asset name="PolicyAction.95caeaca-909e-4655-9125-1982a1408d69" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Relation_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+    </asset>
+    <asset name="API.5b06566b-6210-442e-b0c9-7d266ff3519e" displayName="biofarma-hcm-people[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:Policy.98690baf-0db4-4e5b-b8b6-ef33f93618bc</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+    </asset>
+    <asset name="Policy.98690baf-0db4-4e5b-b8b6-ef33f93618bc" displayName="Policy For API biofarma-hcm-people[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.08b03dd6-0318-4feb-a7c8-5d3a9f3019f6</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.7a580e68-f2b5-44f7-86cb-564d90e9d693</dependsOn>
+    </asset>
+    <asset name="PolicyAction.08b03dd6-0318-4feb-a7c8-5d3a9f3019f6" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-hcm-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.7a580e68-f2b5-44f7-86cb-564d90e9d693" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-hcm-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.916a17ac-b8df-4844-90de-ca09d425d0ec" displayName="apps-test" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.2ee4d350-d77b-4586-8cc2-6a55d1b532ce</dependsOn>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+        <dependsOn>APIGateway:API.6cb96dcb-9b18-427c-8bb2-8097d8cda43f</dependsOn>
+        <dependsOn>APIGateway:API.907d2a2a-4a79-4392-8739-ecda6a444f68</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:Strategy.363dbef7-0bcd-4a5d-869e-2f83b48d85bc</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY916a17ac-b8df-4844-90de-ca09d425d0ec" displayName="API_ACCESS_KEY916a17ac-b8df-4844-90de-ca09d425d0ec" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="API.6cb96dcb-9b18-427c-8bb2-8097d8cda43f" displayName="Test2[1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:Policy.570a48db-c18a-49d7-ab9f-a103da87872d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+    </asset>
+    <asset name="Policy.570a48db-c18a-49d7-ab9f-a103da87872d" displayName="Policy For API Test2[1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3c31710b-a776-4351-a908-37d41d1dbc8c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b0793468-775d-43f1-9d51-082f9f57f7e8</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3c31710b-a776-4351-a908-37d41d1dbc8c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API Test2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec" displayName="RegisteredApplication [ apps-test ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="API.2ee4d350-d77b-4586-8cc2-6a55d1b532ce" displayName="biofarma-people-user[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Application.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:Policy.db3e2937-e8fa-4934-b391-1cc162c43141</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+    </asset>
+    <asset name="Policy.db3e2937-e8fa-4934-b391-1cc162c43141" displayName="Policy For API biofarma-people-user[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.01fd235b-f33f-433f-84b1-21e664367bcf</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.4517dce4-79ca-4625-adfe-0953eb917632</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9923e3bb-fb10-4b9f-b8cf-d129117c8bc3</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9923e3bb-fb10-4b9f-b8cf-d129117c8bc3" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-people-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.01fd235b-f33f-433f-84b1-21e664367bcf" displayName="Policy Action [Log Invocation] -&gt; Policy For API biofarma-people-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4517dce4-79ca-4625-adfe-0953eb917632" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-people-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.50f1f56f-a3c8-4143-9222-5ca093a8f695" displayName="apps-esb" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.26df21bc-0bef-47d3-ab7d-571ecb1187d4</dependsOn>
+        <dependsOn>APIGateway:API.2ee4d350-d77b-4586-8cc2-6a55d1b532ce</dependsOn>
+        <dependsOn>APIGateway:API.52c564f2-5eaf-45cf-af22-967427be59e2</dependsOn>
+        <dependsOn>APIGateway:API.907d2a2a-4a79-4392-8739-ecda6a444f68</dependsOn>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Strategy.caae3fef-3764-44ee-a5f6-d1a306d2ab29</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY50f1f56f-a3c8-4143-9222-5ca093a8f695" displayName="API_ACCESS_KEY50f1f56f-a3c8-4143-9222-5ca093a8f695" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="API.52c564f2-5eaf-45cf-af22-967427be59e2" displayName="biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Policy.3be67cee-7722-42c5-96bf-f1bae4736242</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+    </asset>
+    <asset name="Policy.3be67cee-7722-42c5-96bf-f1bae4736242" displayName="Policy For API biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5d2feb2d-1d78-4da3-9eee-203b2f9d079a</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8a45c8eb-c5d0-4fe0-9943-736253c3bc52</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c8d9a879-bad8-4973-8e26-8d0c93c3727c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cc4d3ceb-aeae-4fe6-bc63-05421c0f5164</dependsOn>
+    </asset>
+    <asset name="PolicyAction.c8d9a879-bad8-4973-8e26-8d0c93c3727c" displayName="Policy Action [Outbound Auth - Transport] -&gt; Policy For API biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.cc4d3ceb-aeae-4fe6-bc63-05421c0f5164" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.8a45c8eb-c5d0-4fe0-9943-736253c3bc52" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695" displayName="RegisteredApplication [ apps-esb ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="API.26df21bc-0bef-47d3-ab7d-571ecb1187d4" displayName="biofarma-esb-calculator[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Policy.0d64b7c8-c1b5-4584-9d21-35464cf1fbc5</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+    </asset>
+    <asset name="API.907d2a2a-4a79-4392-8739-ecda6a444f68" displayName="biofarma-esb-simulate[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:Application.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+        <dependsOn>APIGateway:Policy.4ae438a7-898c-48c5-878e-d0793fb8f835</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.50f1f56f-a3c8-4143-9222-5ca093a8f695</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.916a17ac-b8df-4844-90de-ca09d425d0ec</dependsOn>
+    </asset>
+    <asset name="Strategy.caae3fef-3764-44ee-a5f6-d1a306d2ab29" displayName="esb" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+        <dependsOn>APIGateway:PassmanData.b16a2efd-87c7-4d9b-8b19-cfb03c86aca6-clientSecret</dependsOn>
+    </asset>
+    <asset name="PassmanData.b16a2efd-87c7-4d9b-8b19-cfb03c86aca6-clientSecret" displayName="b16a2efd-87c7-4d9b-8b19-cfb03c86aca6-clientSecret" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Strategy.363dbef7-0bcd-4a5d-869e-2f83b48d85bc" displayName="apps-test" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+        <dependsOn>APIGateway:PassmanData.bbda985d-28c4-43f0-822a-99c9d4cea0b1-clientSecret</dependsOn>
+    </asset>
+    <asset name="PassmanData.bbda985d-28c4-43f0-822a-99c9d4cea0b1-clientSecret" displayName="bbda985d-28c4-43f0-822a-99c9d4cea0b1-clientSecret" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Policy.a25eac99-560e-482c-b8d2-a5ef09810355" displayName="Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.463a81bd-1f39-4c51-903a-ff12cc072283</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6be19d85-6b7d-4747-b1b4-ca0cbe9d0f37</dependsOn>
+    </asset>
+    <asset name="PolicyAction.463a81bd-1f39-4c51-903a-ff12cc072283" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+    </asset>
+    <asset name="PolicyAction.6be19d85-6b7d-4747-b1b4-ca0cbe9d0f37" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+    </asset>
+    <asset name="Policy.a6a2a0b5-e50a-4a9a-b75f-4c3e565dfab9" displayName="Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_post]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.38170650-de63-4541-aac7-fbd86b9439c0</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fe9af828-cc02-4395-b3ea-e2ad0bd91587</dependsOn>
+    </asset>
+    <asset name="PolicyAction.fe9af828-cc02-4395-b3ea-e2ad0bd91587" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_post]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+    </asset>
+    <asset name="PolicyAction.38170650-de63-4541-aac7-fbd86b9439c0" displayName="Policy Action [Mashup Routing] -&gt; Policy For API biofarma-hcm-people[1.1] Scope [sys_/Organization/Position_post]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+    </asset>
+    <asset name="Application.083fb0cd-163a-47cc-b56f-029ac55c70b3" displayName="tes" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY083fb0cd-163a-47cc-b56f-029ac55c70b3</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.083fb0cd-163a-47cc-b56f-029ac55c70b3</dependsOn>
+        <dependsOn>APIGateway:Strategy.31f7f391-670e-4f36-aead-aa98f6c3c99f</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY083fb0cd-163a-47cc-b56f-029ac55c70b3" displayName="API_ACCESS_KEY083fb0cd-163a-47cc-b56f-029ac55c70b3" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Strategy.31f7f391-670e-4f36-aead-aa98f6c3c99f" displayName="tesb4d82c6d-ee58-4ffc-be0d-f21326610e30-$sys-default-oauth" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+        <dependsOn>APIGateway:PassmanData.8438bbb3-0dbc-418f-b8ff-ebfca2841bd9-clientSecret</dependsOn>
+    </asset>
+    <asset name="PassmanData.8438bbb3-0dbc-418f-b8ff-ebfca2841bd9-clientSecret" displayName="8438bbb3-0dbc-418f-b8ff-ebfca2841bd9-clientSecret" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="RegisteredApplication.083fb0cd-163a-47cc-b56f-029ac55c70b3" displayName="RegisteredApplication [ tes ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="Application.bb834c9f-eeea-4243-ba80-aa09645de6af" displayName="tes" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEYbb834c9f-eeea-4243-ba80-aa09645de6af</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.bb834c9f-eeea-4243-ba80-aa09645de6af</dependsOn>
+        <dependsOn>APIGateway:Strategy.d0b36955-b964-43f5-a68f-852e618fbe27</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEYbb834c9f-eeea-4243-ba80-aa09645de6af" displayName="API_ACCESS_KEYbb834c9f-eeea-4243-ba80-aa09645de6af" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Strategy.d0b36955-b964-43f5-a68f-852e618fbe27" displayName="tesf45f85fa-a570-4252-9ae7-a73245f1b0b8-$sys-default-oauth" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+        <dependsOn>APIGateway:PassmanData.ad2989f8-c20f-4beb-bb39-8ca5b17fae2f-clientSecret</dependsOn>
+    </asset>
+    <asset name="PassmanData.ad2989f8-c20f-4beb-bb39-8ca5b17fae2f-clientSecret" displayName="ad2989f8-c20f-4beb-bb39-8ca5b17fae2f-clientSecret" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="RegisteredApplication.bb834c9f-eeea-4243-ba80-aa09645de6af" displayName="RegisteredApplication [ tes ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="Application.c40f408a-7540-402f-a9d9-5dea6961bd2c" displayName="apps-testJwt" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEYc40f408a-7540-402f-a9d9-5dea6961bd2c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.c40f408a-7540-402f-a9d9-5dea6961bd2c</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEYc40f408a-7540-402f-a9d9-5dea6961bd2c" displayName="API_ACCESS_KEYc40f408a-7540-402f-a9d9-5dea6961bd2c" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="RegisteredApplication.c40f408a-7540-402f-a9d9-5dea6961bd2c" displayName="RegisteredApplication [ apps-testJwt ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="Policy.63efb6ad-d1a8-4263-b169-1901724ac294" displayName="Policy For API kf-7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.7fda2710-f3af-4ecf-8761-01acaeb3281e</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b49fc624-0ff1-4032-afc1-947e9850d87d</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b49fc624-0ff1-4032-afc1-947e9850d87d" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.7fda2710-f3af-4ecf-8761-01acaeb3281e" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.f7629d72-3b31-4704-aa6b-59c0f255d7de" displayName="mediverse-telemedicine-private_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.41626cf6-d036-499b-8acf-f2b0fdb9d7b4" displayName="Policy For API kf-7sol-trx-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1215c2a0-0a21-4a83-b820-4602864d63d4</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.81c85de0-f241-4c78-a268-a0c29aa0417c</dependsOn>
+    </asset>
+    <asset name="PolicyAction.1215c2a0-0a21-4a83-b820-4602864d63d4" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-trx-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.81c85de0-f241-4c78-a268-a0c29aa0417c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-trx-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.14ccfc2e-b421-4ab3-9548-9e06d181f1c6" displayName="7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.ad3b7ee9-2a95-43c3-93f8-1130f1c0433a</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.ad3b7ee9-2a95-43c3-93f8-1130f1c0433a" displayName="Policy For API 7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.deaf97de-10eb-4700-9584-abf1f518312f</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f3142873-7772-4d49-94d5-27506e6a3795</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f3142873-7772-4d49-94d5-27506e6a3795" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.deaf97de-10eb-4700-9584-abf1f518312f" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.54de2142-bb95-44b6-bebd-cc74ef3f06bb" displayName="AccessControlList for asset : kf-7sol-oa-security-v2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Truststore.HTTPS_TRUSTSTORE" displayName="HTTPS_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="Truststore"/>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.HTTPS_TRUSTSTORE</dependsOn>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.HTTPS_TRUSTSTORE" displayName="wm.security.keystore.HTTPS_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Policy.0800ceb9-1585-4ec1-b174-098218adb720" displayName="Policy For API kf-7sol-trx-point[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.b3324ab1-693d-45b2-9ee1-13c2d457dc78</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b355bca5-2262-473d-9b3d-d3f688b03394</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b3324ab1-693d-45b2-9ee1-13c2d457dc78" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-trx-point[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.b355bca5-2262-473d-9b3d-d3f688b03394" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-trx-point[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.c6dcb1f4-e021-420c-b325-b46fa9678fe7" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-trx-payment[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.10b73f6d-4cab-43c9-a75c-e857eebd7585" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-trx-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.bf8dcdd2-c3f2-4069-a83e-7b6afc497fc2" displayName="AccessControlList for asset : test-publish" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.5ebae11c-e7cd-4bcb-8ead-4b5e42934fb3" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.0732fa20-2e51-4425-b328-b311a713687f" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API json-api[1.0.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fcacf195-844e-4088-9bd0-2cc3be11b7ec" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-master-merchandise[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.6621890a-2571-4d10-a1ad-81f27f75ddc1" displayName="AccessControlList for asset : test-file-oas" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Alias.local" displayName="local" isDeployable="true">
+        <implementation.generic type="Alias"/>
+        <dependsOn>APIGateway:Keystore.DEFAULT_IS_KEYSTORE</dependsOn>
+    </asset>
+    <asset name="Keystore.DEFAULT_IS_KEYSTORE" displayName="DEFAULT_IS_KEYSTORE" isDeployable="true">
+        <implementation.generic type="Keystore"/>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.DEFAULT_IS_KEYSTORE</dependsOn>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.DEFAULT_IS_KEYSTORE.ssos</dependsOn>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.DEFAULT_IS_KEYSTORE" displayName="wm.security.keystore.DEFAULT_IS_KEYSTORE" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.DEFAULT_IS_KEYSTORE.ssos" displayName="wm.security.keystore.DEFAULT_IS_KEYSTORE.ssos" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PolicyAction.a59c80d3-e08a-4736-9511-572f750d8791" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-esb-simulator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.db4b1f5e-1258-4bb0-80f6-b03977ef2ea4" displayName="sys_/_post_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="API.f0717612-401c-4757-9706-90f32ca6957e" displayName="kf-7sol-trx-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.889c12c7-cbe2-4c40-8298-c3f33c4e8f72</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.889c12c7-cbe2-4c40-8298-c3f33c4e8f72" displayName="Policy For API kf-7sol-trx-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.10b73f6d-4cab-43c9-a75c-e857eebd7585</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.940249d2-f7c2-495f-8462-809b9941d6f2</dependsOn>
+    </asset>
+    <asset name="PolicyAction.940249d2-f7c2-495f-8462-809b9941d6f2" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-trx-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.6d439938-cfc5-4f2e-9bdb-bf52441b701c" displayName="test-publish2[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.f8473b88-8bdd-48ce-9ef3-5686f3223b8a</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.f8473b88-8bdd-48ce-9ef3-5686f3223b8a" displayName="Policy For API test-publish2[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3e3bd865-b13b-4357-932d-bc878cd6aa76</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.d45e9e88-e042-4e58-8a51-5a71611c85e7</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3e3bd865-b13b-4357-932d-bc878cd6aa76" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-publish2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.d45e9e88-e042-4e58-8a51-5a71611c85e7" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-publish2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.a937dc4d-b0d6-4290-b0d7-d64714bd788a" displayName="AccessControlList for asset : Telemedicine Biofarma Development" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.afc49dd6-1537-4fc5-836f-799b293c1daa" displayName="test spasi[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.3c91df24-bc57-4ab5-aa28-7e0f026ab3ae</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.3c91df24-bc57-4ab5-aa28-7e0f026ab3ae" displayName="Policy For API test spasi[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.4332b25b-3d84-47e5-b41b-cbb0d38b0683</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c3b661a2-2fde-42ac-971e-0c5ba81787e3</dependsOn>
+    </asset>
+    <asset name="PolicyAction.c3b661a2-2fde-42ac-971e-0c5ba81787e3" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test spasi[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4332b25b-3d84-47e5-b41b-cbb0d38b0683" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test spasi[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.d13099ef-4c3e-4551-bfba-d23191bc184e" displayName="Policy For API biofarma-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5e7635c0-7b01-48f3-b399-feb984973122</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.976b6acb-ad5b-4c3b-a85d-173298e2cd18</dependsOn>
+    </asset>
+    <asset name="PolicyAction.976b6acb-ad5b-4c3b-a85d-173298e2cd18" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.5e7635c0-7b01-48f3-b399-feb984973122" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1c387505-ff54-4686-944f-39d0513e33b1" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-file-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.7f1551f2-6fb3-4c93-8e96-d0166b6ac146" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.dataspace" displayName="dataspace" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="PolicyAction.fbb34667-7b1d-428a-9530-f9c078a7049e" displayName="Log Invocation" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.64e0fb7f-7465-4000-81e5-ec26f8d2ad3d" displayName="kf-7sol-vaccine-reservation-v2[2.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.27a5842f-73d9-4595-8bb5-a4331e4913e2</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.27a5842f-73d9-4595-8bb5-a4331e4913e2" displayName="Policy For API kf-7sol-vaccine-reservation-v2[2.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.cc23c730-7e71-467a-a5f5-061eb7fa7d01</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e605515d-abc2-4a06-83ac-afa4fd4f68fb</dependsOn>
+    </asset>
+    <asset name="PolicyAction.cc23c730-7e71-467a-a5f5-061eb7fa7d01" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-vaccine-reservation-v2[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.e605515d-abc2-4a06-83ac-afa4fd4f68fb" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-vaccine-reservation-v2[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.19faf200-e4f4-453a-8dd6-c843d18291de" displayName="Policy For API 7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.06025b2e-0b3e-4d8f-a943-5c04605a2989</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.2d741989-96c5-4dde-9083-47bc70d1de4b</dependsOn>
+    </asset>
+    <asset name="PolicyAction.06025b2e-0b3e-4d8f-a943-5c04605a2989" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.2d741989-96c5-4dde-9083-47bc70d1de4b" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.61fbd2d4-6938-4f44-ab67-0555c5db048f" displayName="AccessControlList for asset : Test-Customer" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.efa1eda2-d198-42cc-b66e-6e72c6fbebe2" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-url-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.12149bb6-b430-4513-acc0-b672d99f0c7f" displayName="AccessControlList for asset : test-hc_2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.b2dcc46c-98cb-45d3-a90e-f85cc9094f3f" displayName="kf-7sol-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.a321934e-ab32-4c2d-8835-67cfdc1cf7c5</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.a321934e-ab32-4c2d-8835-67cfdc1cf7c5" displayName="Policy For API kf-7sol-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.02cc214a-a116-4415-9133-d9e4b319281b</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.bea32702-b203-402b-9f23-382c92ca1ce3</dependsOn>
+    </asset>
+    <asset name="PolicyAction.bea32702-b203-402b-9f23-382c92ca1ce3" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.02cc214a-a116-4415-9133-d9e4b319281b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.0dad1351-e356-404d-b8fe-e8e1e4f2e6d0" displayName="AccessControlList for asset : wa-bisnis" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.6a812d00-9aa7-441e-bd33-e21d6332dc79" displayName="test-people[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.203282c6-7317-41b7-a568-ab931c2aec1f</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.203282c6-7317-41b7-a568-ab931c2aec1f" displayName="Policy For API test-people[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.49dc537c-889d-4a34-b701-47f440991bb6</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8e618eb3-6d49-4aa3-a455-a4cf20780558</dependsOn>
+    </asset>
+    <asset name="PolicyAction.8e618eb3-6d49-4aa3-a455-a4cf20780558" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.49dc537c-889d-4a34-b701-47f440991bb6" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="JmsConnectionAlias.PE_NONTRANSACTIONAL_ALIAS" displayName="PE_NONTRANSACTIONAL_ALIAS" isDeployable="true">
+        <implementation.generic type="JmsConnectionAlias"/>
+        <dependsOn>APIGateway:JndiProviderAlias.DEFAULT_IS_JNDI_PROVIDER</dependsOn>
+    </asset>
+    <asset name="JndiProviderAlias.DEFAULT_IS_JNDI_PROVIDER" displayName="DEFAULT_IS_JNDI_PROVIDER" isDeployable="true">
+        <implementation.generic type="JndiProviderAlias"/>
+    </asset>
+    <asset name="PolicyAction.3b744ba2-d56c-43e7-865b-21bc57973479" displayName="Outbound Auth - Transport" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.9c7f3374-6dba-422a-9b05-1dc79e87a314" displayName="AccessControlList for asset : sampleOne" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.559e329d-d61e-4b5b-a855-d5882c6ce966" displayName="AccessControlList for asset : kf-7sol-default" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.302d226a-de54-478d-8998-850a0b702469" displayName="mediverse-telemedicine-private[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.7dc1361f-45ad-4b63-a612-98abaf4f6627</dependsOn>
+        <dependsOn>APIGateway:Policy.f7629d72-3b31-4704-aa6b-59c0f255d7de</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="PolicyAction.0fc08b4d-46f3-4144-b079-31d564dac894" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4e8ffb9d-3e4e-4656-9372-b60cb918c317" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-master-merchandise[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.6e54bee6-be89-4131-a9b8-2dfa66cbfb38" displayName="AccessControlList for asset : 7sol-oa-pos" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.9eb9b046-2be8-40e6-b5d4-5358743c305f" displayName="Policy For API 7sol-oa-security[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.9be69ce6-36f6-414e-a777-0de5dec74c61</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b811ce38-220d-43ec-862b-35dd1899b1ef</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b811ce38-220d-43ec-862b-35dd1899b1ef" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-oa-security[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.9be69ce6-36f6-414e-a777-0de5dec74c61" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-oa-security[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.e62004f2-1399-4cf8-b5dc-f3e23a26bf45" displayName="test[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.63ca307c-660c-4bd0-ac7e-b034dde78d5c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.63ca307c-660c-4bd0-ac7e-b034dde78d5c" displayName="Policy For API test[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.9ccac5e7-6295-4c30-bb96-cac3bce7957c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a6e897ab-07ef-4d7f-b8ee-98395f63db29</dependsOn>
+    </asset>
+    <asset name="PolicyAction.a6e897ab-07ef-4d7f-b8ee-98395f63db29" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.9ccac5e7-6295-4c30-bb96-cac3bce7957c" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fea19143-2de1-44d7-8015-ece7f7a139ab" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API Test-Customer[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.0901fcc8-0207-4bd1-ac37-f9aea961338c" displayName="Policy For API mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.6e574a10-b320-47fd-add5-c3ed9280ccc8</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.ba0ae4e1-38bc-46e1-bf97-8209680386f8</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.bf98e2c0-9ce5-48e0-bd65-ef6a01a7085b</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fd0dcac5-5917-4e0c-b2e5-a42391b7c86c</dependsOn>
+    </asset>
+    <asset name="PolicyAction.ba0ae4e1-38bc-46e1-bf97-8209680386f8" displayName="Policy Action [Request Transformation] -&gt; Policy For API mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.bf98e2c0-9ce5-48e0-bd65-ef6a01a7085b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fd0dcac5-5917-4e0c-b2e5-a42391b7c86c" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6e574a10-b320-47fd-add5-c3ed9280ccc8" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.ec876b22-a3f7-4818-bab2-c4e078da3271" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.21e9edb5-384c-4bb4-9f9f-8cb9abf61125" displayName="AccessControlList for asset : 4935379e-07bd-4c1c-a560-17f1301feafa" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.02455797-4ef4-4543-bac2-dbd0a851bc18" displayName="Policy For API 7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3d64cebc-283e-4a88-97f9-e35aebac036d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fea04891-7221-42b6-8c57-4ff7683b1971</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3d64cebc-283e-4a88-97f9-e35aebac036d" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fea04891-7221-42b6-8c57-4ff7683b1971" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.gatewayDestinationConfig" displayName="API Gateway" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="API.0e163fcc-2d22-486b-ac95-c2621373983e" displayName="7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.75cb4b4a-d6b1-461d-b70d-c3461317182c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.75cb4b4a-d6b1-461d-b70d-c3461317182c" displayName="Policy For API 7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.493a25c2-793b-4f5b-bd21-28134d50c245</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.ec876b22-a3f7-4818-bab2-c4e078da3271</dependsOn>
+    </asset>
+    <asset name="PolicyAction.493a25c2-793b-4f5b-bd21-28134d50c245" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.b8d6b9be-e2ab-4670-b797-75145645c792" displayName="Policy For API wa-bisnis[1.1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1c983cad-3aa4-46f1-a04e-f3c6938da20c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.3b24388f-fe7a-4330-ab7e-8f73e1c89288</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f9bab888-d9c1-4433-86a5-e9154e0738b9</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3b24388f-fe7a-4330-ab7e-8f73e1c89288" displayName="Policy Action [Request Transformation] -&gt; Policy For API wa-bisnis[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1c983cad-3aa4-46f1-a04e-f3c6938da20c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API wa-bisnis[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.f9bab888-d9c1-4433-86a5-e9154e0738b9" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API wa-bisnis[1.1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.38daf883-5625-498d-b95d-55a227104d34" displayName="kf-7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.63efb6ad-d1a8-4263-b169-1901724ac294</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.f3f90595-ab2d-46c4-a3e9-3c397b417f91" displayName="AccessControlList for asset : test-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.8e125501-3bc1-4793-b079-0411ec1ef0ee" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.e566dc71-bd2f-4a93-a02b-fa5fb8ff8e34" displayName="AccessControlList for asset : biofarma-finance" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.c7eae493-bf34-4b6c-8299-d5cb644a369f" displayName="AccessControlList for asset : 7sol-default" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.1ac2c918-3ba5-4fa8-a73a-b2a28049fce5" displayName="AccessControlList for asset : kf-7sol-master-outlet" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.933667fa-9a6e-46d7-b0f6-44e5672f9536" displayName="kf-7sol-oa-member[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.ff650189-e3de-4529-a1f7-7a09a316716c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.ff650189-e3de-4529-a1f7-7a09a316716c" displayName="Policy For API kf-7sol-oa-member[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.d2044213-2689-4f50-abd7-0f0651a7773c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e077885b-be2d-41de-ad4b-33e9a6cbaef0</dependsOn>
+    </asset>
+    <asset name="PolicyAction.e077885b-be2d-41de-ad4b-33e9a6cbaef0" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-oa-member[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.d2044213-2689-4f50-abd7-0f0651a7773c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-oa-member[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.eebf60fa-343e-4575-adb4-aa6307ee5bad" displayName="AccessControlList for asset : mediverse-mobile" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.8ea01706-f698-4f1d-96fd-6ddace7df904" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.80e9a90f-5cd5-41f5-9e4c-2f4e0c0e02fb" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-oa-security-v2[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@9999" displayName="HTTPListener@9999" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="AdministratorSetting.loadBalancer" displayName="Load balancer" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="AccessControlList.81de9a66-46d1-419a-a73e-304d65dad79a" displayName="AccessControlList for asset : mediverse-ehr-private" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.ad4fe7db-4b10-469f-853a-a5f2a0d50054" displayName="Policy For API test-url-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.b3b1d74d-4103-4969-837a-2c7f5020b3f0</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.efa1eda2-d198-42cc-b66e-6e72c6fbebe2</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f7c5daa9-b2b2-4a52-9be6-4521417f554a</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f7c5daa9-b2b2-4a52-9be6-4521417f554a" displayName="Policy Action [Request Transformation] -&gt; Policy For API test-url-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.bb273fd9-f675-4e46-96c2-22ae7857c49f" displayName="sys_/availability_dokter_put_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="PolicyAction.30577275-2615-4838-9ee1-54b54a281a48" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-publish3[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.dfa02cae-c22f-4362-a0c1-2b69f5bc0b0a" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-ehr-public[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Alias.ServiceConsulDefault" displayName="ServiceConsulDefault" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+    <asset name="ProxyBypass.proxyBypass" displayName="proxyBypass" isDeployable="true">
+        <implementation.generic type="ProxyBypass"/>
+    </asset>
+    <asset name="Policy.296789fc-cb5c-463c-82dd-108f91c9878d" displayName="Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.05791b3f-ab18-45a0-af42-793a61f3e385</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.131d7ba2-cdc7-4429-a6b4-b271303d72cc</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.3b126810-4131-4f77-afbc-4ff15303aa6a</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.7f1551f2-6fb3-4c93-8e96-d0166b6ac146</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e628d112-f371-4a70-9170-10f58f4bae68</dependsOn>
+    </asset>
+    <asset name="PolicyAction.e628d112-f371-4a70-9170-10f58f4bae68" displayName="Policy Action [Request Transformation] -&gt; Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.05791b3f-ab18-45a0-af42-793a61f3e385" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.3b126810-4131-4f77-afbc-4ff15303aa6a" displayName="Policy Action [Log Invocation] -&gt; Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.131d7ba2-cdc7-4429-a6b4-b271303d72cc" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API mediverse-test-auth[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.a98c3256-ee13-4052-b637-e8b4ed61b121" displayName="AccessControlList for asset : 7sol-master-item" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.d43ff713-9ab0-45f3-9c6f-e084081abcb3" displayName="AccessControlList for asset : kf-7sol-oa-messenger" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b22685a4-221d-4b1e-b4bf-23be4ca85b77" displayName="AccessControlList for asset : kf-7sol-reservation" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f9a12fb0-e9c9-45e0-8010-30588dc20468" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-oa-pos[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.dc62ee61-22a2-458e-add0-f3fe8571df4c" displayName="kf-7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.9ce77ffe-e25c-437a-986e-44d8c6f63795</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.9ce77ffe-e25c-437a-986e-44d8c6f63795" displayName="Policy For API kf-7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.05458d59-ec55-4e8f-87e4-5dd5781cf7f5</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8ea01706-f698-4f1d-96fd-6ddace7df904</dependsOn>
+    </asset>
+    <asset name="PolicyAction.05458d59-ec55-4e8f-87e4-5dd5781cf7f5" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.ffff09aa-dcbf-405e-8d4c-d863c4dc55cc" displayName="Policy For API kf-7sol-trx-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.8aa96491-76b7-4c05-8344-4a8ee92787c7</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9c6b16ab-6d5f-4966-8a11-3ed88516ecf2</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9c6b16ab-6d5f-4966-8a11-3ed88516ecf2" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-trx-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.8aa96491-76b7-4c05-8344-4a8ee92787c7" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-trx-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.10b7367a-5beb-45b7-924b-6db14caba191" displayName="AccessControlList for asset : kf-7sol-vaccine-reservation" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.45e2ebf0-6cfc-4670-924e-17da67863b57" displayName="Policy For API biofarma-finance[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1f12c606-bf6d-4036-8469-6c258e79e151</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.312602ee-62dd-4e2e-ad37-58f4ef800291</dependsOn>
+    </asset>
+    <asset name="PolicyAction.1f12c606-bf6d-4036-8469-6c258e79e151" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-finance[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.312602ee-62dd-4e2e-ad37-58f4ef800291" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-finance[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.2d899f9b-3a6b-46bd-8315-f5e8ee214564" displayName="apps-WaBiz" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.bdeb4658-dba0-4247-a543-00e5410e1b27</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY2d899f9b-3a6b-46bd-8315-f5e8ee214564</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.2d899f9b-3a6b-46bd-8315-f5e8ee214564</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY2d899f9b-3a6b-46bd-8315-f5e8ee214564" displayName="API_ACCESS_KEY2d899f9b-3a6b-46bd-8315-f5e8ee214564" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="API.bdeb4658-dba0-4247-a543-00e5410e1b27" displayName="esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.2d899f9b-3a6b-46bd-8315-f5e8ee214564</dependsOn>
+        <dependsOn>APIGateway:Policy.fe7b4552-b526-4773-9f5d-64e6da9f55d0</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.2d899f9b-3a6b-46bd-8315-f5e8ee214564</dependsOn>
+    </asset>
+    <asset name="Policy.fe7b4552-b526-4773-9f5d-64e6da9f55d0" displayName="Policy For API esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.31b3d94c-1e3d-4fb4-b8fb-e0fcb89abed4</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.75f658c8-5370-45a3-85dd-4119c5d97ded</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9f7d0695-ae1b-4c76-abf6-da1c1afdb287</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a46b378e-7a88-4ccb-8fc7-c51bed56c707</dependsOn>
+    </asset>
+    <asset name="PolicyAction.31b3d94c-1e3d-4fb4-b8fb-e0fcb89abed4" displayName="Policy Action [Outbound Auth - Transport] -&gt; Policy For API esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:PassmanData.31b3d94c-1e3d-4fb4-b8fb-e0fcb89abed4password</dependsOn>
+    </asset>
+    <asset name="PassmanData.31b3d94c-1e3d-4fb4-b8fb-e0fcb89abed4password" displayName="31b3d94c-1e3d-4fb4-b8fb-e0fcb89abed4password" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PolicyAction.75f658c8-5370-45a3-85dd-4119c5d97ded" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.9f7d0695-ae1b-4c76-abf6-da1c1afdb287" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API esb-wa[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="RegisteredApplication.2d899f9b-3a6b-46bd-8315-f5e8ee214564" displayName="RegisteredApplication [ apps-WaBiz ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="AccessControlList.c7e9ed67-92e0-4aaa-8e94-b3287e9a691a" displayName="AccessControlList for asset : test_spasi" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.73aba1f4-a9d0-4ad5-8767-3adb58e4be2c" displayName="Telemedicine Biofarma Development[1.0.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.4574f1ec-b87e-4604-b5da-be745171bb13</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.4574f1ec-b87e-4604-b5da-be745171bb13" displayName="Policy For API Telemedicine Biofarma Development[1.0.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0e485701-0572-48e1-9c76-8bda517efd80</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f2950fd1-183b-464f-8b9e-0e9bfb1caeba</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f2950fd1-183b-464f-8b9e-0e9bfb1caeba" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API Telemedicine Biofarma Development[1.0.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.0e485701-0572-48e1-9c76-8bda517efd80" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API Telemedicine Biofarma Development[1.0.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.31e66f93-ff51-492c-b4ec-fa039eacf1b5" displayName="sys_/Organization/Relation_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.cdf18691-a462-4823-8a3e-f07cb7469f00" displayName="esb-policies[Policy Template]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.504a9e5f-63a2-41e0-bd66-657ba8679746</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.59e715a2-2aec-47e4-9e36-0c3b2f37fc06</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6066009b-6525-4679-b155-91c482369f98</dependsOn>
+    </asset>
+    <asset name="PolicyAction.504a9e5f-63a2-41e0-bd66-657ba8679746" displayName="Policy Action [Outbound Auth - Transport] -&gt; esb-policies" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.59e715a2-2aec-47e4-9e36-0c3b2f37fc06" displayName="Policy Action [Identify &amp; Authorize] -&gt; esb-policies" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6066009b-6525-4679-b155-91c482369f98" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; esb-policies" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.e9c13dc7-aa09-45b8-be07-7846b37ca9cf" displayName="Policy For API 7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5ebae11c-e7cd-4bcb-8ead-4b5e42934fb3</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9f46b6f7-c829-44c1-af4a-65acce124e06</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9f46b6f7-c829-44c1-af4a-65acce124e06" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.a5140992-197a-4a57-9ced-0eac92ddedda" displayName="7sol-oa-messenger[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.02455797-4ef4-4543-bac2-dbd0a851bc18</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f8987697-b598-4077-8e44-8f5cb6d2e011" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-lab[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.c25519b8-f7e7-407c-abe0-ca90b6f93091" displayName="AccessControlList for asset : apps-test" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.ae671b8e-e6d1-4fda-90ab-4be176688065" displayName="kf-7sol-master-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.27ab0b04-295b-4a26-ac95-8b9ecd7fbd1c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.27ab0b04-295b-4a26-ac95-8b9ecd7fbd1c" displayName="Policy For API kf-7sol-master-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.ca0f01ae-1cac-498d-9ab4-431aaff08cea</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.da680664-66ca-4aac-81ac-5a8508f79597</dependsOn>
+    </asset>
+    <asset name="PolicyAction.ca0f01ae-1cac-498d-9ab4-431aaff08cea" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.da680664-66ca-4aac-81ac-5a8508f79597" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.f276cf5c-c37c-4b3f-9c10-f70b105953a7" displayName="new-people[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.9959c5a5-45ae-45fc-90da-16b7b9424377</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.9959c5a5-45ae-45fc-90da-16b7b9424377" displayName="Policy For API new-people[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.6409fd7b-320a-42be-9590-e64f93409a28</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9d2face1-58c0-43fa-95d2-a8d638ff0aa4</dependsOn>
+    </asset>
+    <asset name="PolicyAction.9d2face1-58c0-43fa-95d2-a8d638ff0aa4" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API new-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.dabcc0ce-24ef-49e0-90b5-78eba3c91c4c" displayName="bf-smart-retail[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.24777540-6b96-4b8f-8cb6-9fb97ab6d5a2</dependsOn>
+        <dependsOn>APIGateway:Policy.015f020f-4559-46cf-8ef4-e7cd6d011603</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.24777540-6b96-4b8f-8cb6-9fb97ab6d5a2</dependsOn>
+    </asset>
+    <asset name="Policy.015f020f-4559-46cf-8ef4-e7cd6d011603" displayName="Policy For API bf-smart-retail[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1615eb5a-70e6-46f7-bcba-170426402d4f</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.d6500600-fb47-4f22-8aea-2cbc74449502</dependsOn>
+    </asset>
+    <asset name="PolicyAction.d6500600-fb47-4f22-8aea-2cbc74449502" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API bf-smart-retail[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.24777540-6b96-4b8f-8cb6-9fb97ab6d5a2" displayName="apps-kfa" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.dabcc0ce-24ef-49e0-90b5-78eba3c91c4c</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY24777540-6b96-4b8f-8cb6-9fb97ab6d5a2</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.24777540-6b96-4b8f-8cb6-9fb97ab6d5a2</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY24777540-6b96-4b8f-8cb6-9fb97ab6d5a2" displayName="API_ACCESS_KEY24777540-6b96-4b8f-8cb6-9fb97ab6d5a2" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="RegisteredApplication.24777540-6b96-4b8f-8cb6-9fb97ab6d5a2" displayName="RegisteredApplication [ apps-kfa ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="AccessControlList.312b0e36-9b88-4a1a-928f-b15e8b6e43dc" displayName="AccessControlList for asset : test-url-wsdl" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.8696b91b-3c76-4f0c-a5f2-b0208fc1a57c" displayName="test-import2[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.6c118e0f-85ab-4f61-b797-4b5741dbecc9</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.6c118e0f-85ab-4f61-b797-4b5741dbecc9" displayName="Policy For API test-import2[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.2579951b-b744-4d68-981c-e60182a22ad6</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.4f0806eb-66f6-4e5d-a03a-846a22145fae</dependsOn>
+    </asset>
+    <asset name="PolicyAction.2579951b-b744-4d68-981c-e60182a22ad6" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-import2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4f0806eb-66f6-4e5d-a03a-846a22145fae" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-import2[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.51433890-c027-47fb-a605-9a2fd2d0a42d" displayName="Policy For API kf-7sol-master-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.209e103a-70bb-42c0-8c5e-ca6fd658dbab</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.63b34740-24bf-467b-b124-d2530eb2c1e9</dependsOn>
+    </asset>
+    <asset name="PolicyAction.63b34740-24bf-467b-b124-d2530eb2c1e9" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.209e103a-70bb-42c0-8c5e-ca6fd658dbab" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Truststore.DEFAULT_IS_TRUSTSTORE" displayName="DEFAULT_IS_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="Truststore"/>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.DEFAULT_IS_TRUSTSTORE</dependsOn>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.DEFAULT_IS_TRUSTSTORE" displayName="wm.security.keystore.DEFAULT_IS_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Policy.8b109275-28b6-4b84-9cc3-f87885c6fc3e" displayName="sys_/CheckValidUsername_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.c3cfa909-c053-4278-b037-cc61c515a69f" displayName="Policy For API kf-7sol-vaccine-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5d432bc8-5fe7-4441-adcb-223935301327</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.846d6c89-2a93-4046-9e28-db6fbaeca96d</dependsOn>
+    </asset>
+    <asset name="PolicyAction.5d432bc8-5fe7-4441-adcb-223935301327" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-vaccine-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.846d6c89-2a93-4046-9e28-db6fbaeca96d" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-vaccine-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.e6b0e890-b6ca-4ca3-ad00-37e3ee281177" displayName="AccessControlList for asset : kf-7sol-trx-homecare" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.fd1a8cb7-c69c-46ed-99e8-e41fe38a6c63" displayName="AccessControlList for asset : Test2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.49bab0b8-f009-4932-bb73-5ced5d16e74d" displayName="AccessControlList for asset : test-import" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.94dd3399-58e6-49b2-9aee-b84abe18c814" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API sampleOne[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.f5f3457b-7217-489d-a28c-f997479c0408" displayName="Policy Action [Identify &amp; Authorize] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.0a852748-0c91-4db5-9182-ab23e6409a62" displayName="test-peoples[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.1a0dd4fb-3784-4b60-8c99-6e2d4ae9bbe8</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.1a0dd4fb-3784-4b60-8c99-6e2d4ae9bbe8" displayName="Policy For API test-peoples[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0839729c-4f8d-40b5-8df3-8f585da3c4a7</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.557fb286-c140-4407-bc0f-57b8f84230fd</dependsOn>
+    </asset>
+    <asset name="PolicyAction.0839729c-4f8d-40b5-8df3-8f585da3c4a7" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-peoples[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.557fb286-c140-4407-bc0f-57b8f84230fd" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-peoples[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.986d6d85-27ed-4eda-a836-bcc1fea68dcd" displayName="mediverse-route-param[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.03f42b47-3ecd-43ef-a33a-6b0ae91f5230</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.03f42b47-3ecd-43ef-a33a-6b0ae91f5230" displayName="Policy For API mediverse-route-param[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1b75c836-33e5-483f-8138-8a1b60e858f2</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b6b1060d-9af8-4c27-bc24-ef0b9790f63d</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b6b1060d-9af8-4c27-bc24-ef0b9790f63d" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-route-param[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1b75c836-33e5-483f-8138-8a1b60e858f2" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-route-param[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.94329c18-b770-4f4b-bb53-0017e5ccdede" displayName="Policy For API bf-hc[1.0] Scope [sys_/ParameterByType_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5c12e2e4-be14-4e77-abd8-c8b354627228</dependsOn>
+    </asset>
+    <asset name="PolicyAction.5c12e2e4-be14-4e77-abd8-c8b354627228" displayName="Policy Action [Mashup Routing] -&gt; Policy For API bf-hc[1.0] Scope [sys_/ParameterByType_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.def7f89a-e483-4869-87ec-cf5f1b603943</dependsOn>
+    </asset>
+    <asset name="API.def7f89a-e483-4869-87ec-cf5f1b603943" displayName="bf-hc[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.0048773c-2b03-4731-a358-116b0c5320e1</dependsOn>
+        <dependsOn>APIGateway:Policy.2cd6484d-67eb-426b-a38e-86c4a05d0abe</dependsOn>
+        <dependsOn>APIGateway:Policy.481c415c-10e4-40a6-8d9a-d628e73c6579</dependsOn>
+        <dependsOn>APIGateway:Policy.80100d76-5058-408c-9f61-87699994852d</dependsOn>
+        <dependsOn>APIGateway:Policy.94329c18-b770-4f4b-bb53-0017e5ccdede</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.0048773c-2b03-4731-a358-116b0c5320e1" displayName="Policy For API bf-hc[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3679977e-9991-491c-beeb-661f1c22c331</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.39730d85-9a7b-4449-b885-2980050e289d</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3679977e-9991-491c-beeb-661f1c22c331" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API bf-hc[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.2cd6484d-67eb-426b-a38e-86c4a05d0abe" displayName="Policy For API bf-hc[1.0] Scope [sys_/OrganizationByType_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.c9c03602-a23c-4242-bd7c-fe23d611fc54</dependsOn>
+    </asset>
+    <asset name="PolicyAction.c9c03602-a23c-4242-bd7c-fe23d611fc54" displayName="Policy Action [Mashup Routing] -&gt; Policy For API bf-hc[1.0] Scope [sys_/OrganizationByType_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.def7f89a-e483-4869-87ec-cf5f1b603943</dependsOn>
+    </asset>
+    <asset name="Policy.481c415c-10e4-40a6-8d9a-d628e73c6579" displayName="Policy For API bf-hc[1.0] Scope [sys_/OrganizationByGroup_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.d5ef0b0c-2b30-4361-a226-add3fda51b8c</dependsOn>
+    </asset>
+    <asset name="PolicyAction.d5ef0b0c-2b30-4361-a226-add3fda51b8c" displayName="Policy Action [Mashup Routing] -&gt; Policy For API bf-hc[1.0] Scope [sys_/OrganizationByGroup_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.def7f89a-e483-4869-87ec-cf5f1b603943</dependsOn>
+    </asset>
+    <asset name="Policy.80100d76-5058-408c-9f61-87699994852d" displayName="Policy For API bf-hc[1.0] Scope [sys_/ParameterByRelation_get]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.49f33afa-5aa6-41e7-ab45-7a066144fecd</dependsOn>
+    </asset>
+    <asset name="PolicyAction.49f33afa-5aa6-41e7-ab45-7a066144fecd" displayName="Policy Action [Mashup Routing] -&gt; Policy For API bf-hc[1.0] Scope [sys_/ParameterByRelation_get]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+        <dependsOn>APIGateway:API.def7f89a-e483-4869-87ec-cf5f1b603943</dependsOn>
+    </asset>
+    <asset name="PolicyAction.894b5f82-0abd-4006-8933-08cab144bd5d" displayName="Policy Action [Log Invocation] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.9f47978f-e7f2-40cb-87ab-363cdf14b62a" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API json-api[1.0.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.23ce012d-5a14-4e09-bdb5-dc8b45ad53d7" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-2pl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.7413051a-3835-4d93-9097-0e27a41377db" displayName="7sol-master-item[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.e9c13dc7-aa09-45b8-be07-7846b37ca9cf</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.945befe6-a3d1-49fc-82cd-7ce9fabfe2a9" displayName="mediverse-ehr-public[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.6abcbba0-791a-4403-837d-776eede0ddf8</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.6abcbba0-791a-4403-837d-776eede0ddf8" displayName="Policy For API mediverse-ehr-public[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.48ce35e2-4857-42ae-bb2c-74af808074a5</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.dfa02cae-c22f-4362-a0c1-2b69f5bc0b0a</dependsOn>
+    </asset>
+    <asset name="PolicyAction.48ce35e2-4857-42ae-bb2c-74af808074a5" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-ehr-public[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.584f148e-c89d-4cc0-8bfd-9ff4d0fdb7f5" displayName="biofarma-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.d13099ef-4c3e-4551-bfba-d23191bc184e</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b1760b16-5823-4a7f-9383-61c8bb8487a4" displayName="AccessControlList for asset : bf-ehr" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Alias.EurekaDefault" displayName="EurekaDefault" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+    <asset name="PolicyAction.cd23e51b-39ea-4308-832f-46e6891d5b6e" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API bf-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.cefadff5-6bcd-4983-96a5-3ff389b6d587" displayName="7sol-master-address[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.3cc5b65a-4139-47d1-b0df-e21e09267716</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.3cc5b65a-4139-47d1-b0df-e21e09267716" displayName="Policy For API 7sol-master-address[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.7153cdbd-a70f-4c62-b09a-565aa3f65f20</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.85a8b377-583f-4fea-99b9-3811b502dea7</dependsOn>
+    </asset>
+    <asset name="PolicyAction.85a8b377-583f-4fea-99b9-3811b502dea7" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-master-address[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.60e81905-cca0-444b-a9e8-e92569001242" displayName="AccessControlList for asset : 7sol-master-user" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.f178611a-a9b9-4f66-98f3-4bb531f2bb3b" displayName="7sol-oa-security[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.9eb9b046-2be8-40e6-b5d4-5358743c305f</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.13423dc2-1b0c-4b31-9941-7515f6cd1dd5" displayName="Policy For API kf-7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.680cbab4-6f37-4498-b430-457fc9185dda</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b3ea89e4-8455-48c8-9bff-f1e9f4cf1f4e</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b3ea89e4-8455-48c8-9bff-f1e9f4cf1f4e" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.680cbab4-6f37-4498-b430-457fc9185dda" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.3df70db2-0c50-4349-b854-b9005b4ea375" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-trx-payment[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.6580293b-7416-4ae9-bdc5-67ab30b94428" displayName="AccessControlList for asset : test-publish3" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.d1389f0c-a500-4dbd-ac90-c30f5d557a7f" displayName="Policy For API json-api[1.0.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0732fa20-2e51-4425-b328-b311a713687f</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9f47978f-e7f2-40cb-87ab-363cdf14b62a</dependsOn>
+    </asset>
+    <asset name="AccessControlList.8ccea1d9-8424-4528-a541-90edb6d9474c" displayName="AccessControlList for asset : bf-hc" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b34e2112-1482-42c5-996f-69e3d918b98b" displayName="AccessControlList for asset : apps-test2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.0501b651-e5a0-4427-8c07-40c5116f8e15" displayName="AccessControlList for asset : kf-7sol-master-vaccine" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.extended" displayName="Extended settings" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="API.42a30eb3-7d5e-453d-9fe5-d7f7b0b31d45" displayName="test-url-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.ad4fe7db-4b10-469f-853a-a5f2a0d50054</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.whiteListingIPs" displayName="whiteListingIPs" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="User.4887919a-cfa2-4d44-afb9-ab9f6c528825" displayName="devdev" isDeployable="true">
+        <implementation.generic type="User"/>
+    </asset>
+    <asset name="API.7009a8de-754b-4bba-9c02-e2328418039a" displayName="test-publish3[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.81bca37a-2b3d-4f66-b97f-7213a8f49a0d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.81bca37a-2b3d-4f66-b97f-7213a8f49a0d" displayName="Policy For API test-publish3[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.20247565-5c3a-4c5e-b685-2fe2186f4ae1</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.30577275-2615-4838-9ee1-54b54a281a48</dependsOn>
+    </asset>
+    <asset name="PolicyAction.20247565-5c3a-4c5e-b685-2fe2186f4ae1" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-publish3[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fe8ea5d6-86bd-43a8-ac4b-a7d4deaa6314" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-homecare-doctor[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.0f963028-c0d9-4d9d-8f10-de76c270074b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-vaccine[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.36c1cb10-fa8a-49cf-a9c8-63bcbefb8c1d" displayName="AccessControlList for asset : biofarma-pmo-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.1b0857ef-f82e-47ba-a70a-f78e8b4e120a" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.4069595e-5da8-41c8-9075-4362bd73a8a4" displayName="biofarma-finance[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.45e2ebf0-6cfc-4670-924e-17da67863b57</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.cb1b61a5-87aa-45b3-9ab8-1f8d6fad216a" displayName="AccessControlList for asset : test-ehr" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.e291c315-3eb2-45a7-b515-499dbf5c200e" displayName="sys_/tes_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="API.dbc6b4bb-a5ce-4d6b-b0d5-ce7fbccca664" displayName="test-file-oas[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.1b0dc5ae-7ef6-46c5-9843-2d97aff9c6e2</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.1b0dc5ae-7ef6-46c5-9843-2d97aff9c6e2" displayName="Policy For API test-file-oas[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.a418d83a-ab75-4edc-b986-a717b72e0a0c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f28a01bb-e5a8-4760-9f72-3fe6f0aec834</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f28a01bb-e5a8-4760-9f72-3fe6f0aec834" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-file-oas[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.a418d83a-ab75-4edc-b986-a717b72e0a0c" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-file-oas[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.6f89b0f3-213b-4aa5-be52-e0e4359afae5" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API mediverse-telemedicine-public[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.42f3077c-2943-4f38-95d2-c36e065f919d" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.09b07e81-3733-48ae-b083-05d6b06afa8d" displayName="7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.19faf200-e4f4-453a-8dd6-c843d18291de</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b2df6ea1-85f8-438a-8752-a6ab107b4590" displayName="AccessControlList for asset : new-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.835fb0d6-1ef4-486f-9dd1-02e1442e3c71" displayName="AccessControlList for asset : mediverse-route-param" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.GlobalLogInvocationPolicy" displayName="Transaction logging[Global Policy]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.GlobalLogInvocationPolicyAction</dependsOn>
+    </asset>
+    <asset name="PolicyAction.GlobalLogInvocationPolicyAction" displayName="Policy Action [Log Invocation] -&gt; Transaction logging" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.61485991-99d4-4815-8f1a-695a80be71d8" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-backend_finance[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.logConfig" displayName="logConfig" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Group.API-Gateway-Providers" displayName="API-Gateway-Providers" isDeployable="true">
+        <implementation.generic type="Group"/>
+    </asset>
+    <asset name="API.7cce9b17-60a8-4058-812c-3b09de3d558f" displayName="kf-7sol-oa-security-v2[2.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.2abb5566-ddeb-40ec-93b8-6fa73a379bd1</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.2abb5566-ddeb-40ec-93b8-6fa73a379bd1" displayName="Policy For API kf-7sol-oa-security-v2[2.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.80e9a90f-5cd5-41f5-9e4c-2f4e0c0e02fb</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cad1db4c-79bd-469d-b329-953acbf499c4</dependsOn>
+    </asset>
+    <asset name="PolicyAction.cad1db4c-79bd-469d-b329-953acbf499c4" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-oa-security-v2[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.125e318c-cdda-4cac-af5e-f51511442609" displayName="biofarma-backend_finance[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.0323ed8c-df67-419c-b2a3-41f3b95f8f1d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.0323ed8c-df67-419c-b2a3-41f3b95f8f1d" displayName="Policy For API biofarma-backend_finance[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.61485991-99d4-4815-8f1a-695a80be71d8</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6601da24-0ba0-4676-8b02-6415c94d708f</dependsOn>
+    </asset>
+    <asset name="PolicyAction.6601da24-0ba0-4676-8b02-6415c94d708f" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-backend_finance[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.3b606ac6-8928-4df9-bae1-e52105744ca9" displayName="AccessControlList for asset : test spasi" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.0fd1a43b-2dc3-4b1d-ad06-4aa76abc6dac" displayName="Policy For API test-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0fc08b4d-46f3-4144-b079-31d564dac894</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.42f3077c-2943-4f38-95d2-c36e065f919d</dependsOn>
+    </asset>
+    <asset name="AccessControlList.ba72d636-d7c0-474a-84e8-b3a877cce423" displayName="AccessControlList for asset : kf-7sol-master-lab" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.d31ee5f2-81cf-4ba4-9981-ad6a573eb3c3" displayName="Policy For API kf-7sol-master-lab[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.e148de25-1e83-4b2d-9434-8271da6da574</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f8987697-b598-4077-8e44-8f5cb6d2e011</dependsOn>
+    </asset>
+    <asset name="PolicyAction.e148de25-1e83-4b2d-9434-8271da6da574" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-lab[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.37c1b8d4-900a-4498-9e9f-20d591cf7809" displayName="sys_/sendHsm/{template_name}_post_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.c8946056-d3f7-4c9e-b165-1443d9ce9ef1" displayName="sys_/auth_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="API.b90b8b36-e366-4b97-8eea-e66792a90f69" displayName="test-file-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.a232e4c1-16ef-4b83-9c0a-492a9b3e9a90</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.a232e4c1-16ef-4b83-9c0a-492a9b3e9a90" displayName="Policy For API test-file-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1c387505-ff54-4686-944f-39d0513e33b1</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.855f6be4-8716-4c36-b7b9-308730c976db</dependsOn>
+    </asset>
+    <asset name="PolicyAction.855f6be4-8716-4c36-b7b9-308730c976db" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test-file-wsdl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.keystore" displayName="Keystore/Truststore" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Policy.5123baab-87b5-43a2-b198-6f7d3fd96925" displayName="mediverse-test-auth_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.8fa48987-8053-46d2-bb72-d7df604b0c33" displayName="sys_/tes_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="PolicyAction.cca0020f-9504-4908-ab18-d51fee02095b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.aab2cc02-feab-434b-9abd-fd397ede0876" displayName="AccessControlList for asset : apps-testJwt" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.c049556f-0acd-42df-b70b-49048b45f641" displayName="biofarma-backend-people[2.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.05f1a122-6e6d-4bb8-89ae-ea5fcf4636de</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.57ac94db-ad54-448d-a956-ce2c4600157a" displayName="bf-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.38b0bbb3-cab5-4374-be93-0ac0ff74bd15</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.38b0bbb3-cab5-4374-be93-0ac0ff74bd15" displayName="Policy For API bf-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.a1c22551-ef52-4334-95ee-962e9ee497ec</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cd23e51b-39ea-4308-832f-46e6891d5b6e</dependsOn>
+    </asset>
+    <asset name="PolicyAction.a1c22551-ef52-4334-95ee-962e9ee497ec" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API bf-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.c60349e6-3f32-412c-bccb-d34cf9c9cebe" displayName="Policy For API biofarma-esb-simulator[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3cd890d1-5ecd-4226-a5e3-a4a4b7b5b976</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a59c80d3-e08a-4736-9511-572f750d8791</dependsOn>
+    </asset>
+    <asset name="PolicyAction.3cd890d1-5ecd-4226-a5e3-a4a4b7b5b976" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-esb-simulator[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.ff653d06-8e06-4430-b093-92ede08448d6" displayName="AccessControlList for asset : mediverse-telemedicine-private" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.1cceabb1-f33c-474e-896a-a13b7b499384" displayName="AccessControlList for asset : biofarma-esb-simulator" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.8693c38a-a612-4845-a597-e1fc368e72d5" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-2pl[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.fc14d90e-23fe-4733-85fa-1e3de5b63e0d" displayName="test_spasi[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.a3bae82e-b951-49db-90ea-92b0c21dc90c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.a3bae82e-b951-49db-90ea-92b0c21dc90c" displayName="Policy For API test_spasi[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.d4729e6b-5cb7-4ad8-a90f-889f41392372</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.eacb122b-d8ae-4b87-8112-f609cbbfee0b</dependsOn>
+    </asset>
+    <asset name="PolicyAction.eacb122b-d8ae-4b87-8112-f609cbbfee0b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API test_spasi[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.d4729e6b-5cb7-4ad8-a90f-889f41392372" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API test_spasi[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.d43546f9-9a53-4a41-bc94-b83fdd6997dc" displayName="kf-7sol-master-homecare-doctor[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.21435f59-3b43-4c03-a05d-d29bb0ceb5dc</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.21435f59-3b43-4c03-a05d-d29bb0ceb5dc" displayName="Policy For API kf-7sol-master-homecare-doctor[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.8de9290b-23e8-424a-801c-b54a65775ad5</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fe8ea5d6-86bd-43a8-ac4b-a7d4deaa6314</dependsOn>
+    </asset>
+    <asset name="PolicyAction.8de9290b-23e8-424a-801c-b54a65775ad5" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-homecare-doctor[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.bc116ba1-b182-429d-a8d1-081373ed65c4" displayName="Policy For API Test-Customer[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.cf760a87-ced9-4945-b7d2-2c1e943480a9</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fea19143-2de1-44d7-8015-ece7f7a139ab</dependsOn>
+    </asset>
+    <asset name="PolicyAction.cf760a87-ced9-4945-b7d2-2c1e943480a9" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API Test-Customer[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1d9f3d57-855e-45eb-8bfb-0b19d1956539" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API 7sol-oa-pos[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.30a34ea2-6f10-4f26-a501-da4ade1bf82d" displayName="mediverse-telemedicine-public[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.a4e750a8-fc6f-437d-83a5-70d3b112421e</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.a4e750a8-fc6f-437d-83a5-70d3b112421e" displayName="Policy For API mediverse-telemedicine-public[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.6f89b0f3-213b-4aa5-be52-e0e4359afae5</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.d2a0b5f6-fb7b-4be8-b49a-86ba6c0cb1d5</dependsOn>
+    </asset>
+    <asset name="PolicyAction.d2a0b5f6-fb7b-4be8-b49a-86ba6c0cb1d5" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API mediverse-telemedicine-public[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.7c5c11d7-528a-4729-89b9-506d60489bed" displayName="AccessControlList for asset : mediverse-ehr-public" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Keystore.HTTPS_KEYSTORE" displayName="HTTPS_KEYSTORE" isDeployable="true">
+        <implementation.generic type="Keystore"/>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.HTTPS_KEYSTORE</dependsOn>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.HTTPS_KEYSTORE.https_keystore</dependsOn>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.HTTPS_KEYSTORE" displayName="wm.security.keystore.HTTPS_KEYSTORE" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.HTTPS_KEYSTORE.https_keystore" displayName="wm.security.keystore.HTTPS_KEYSTORE.https_keystore" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="AccessControlList.739ffafd-751f-4f7e-9369-8aeba8267b06" displayName="AccessControlList for asset : kf-7sol-2pl" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.223f549c-2de2-4b50-bf1e-6ded427fef72" displayName="Policy For API biofarma-pmo-people[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.48adbc4e-1ce1-41c9-ad1c-51fbb6e6188f</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c69dbfc2-2429-4166-8349-ecb7e7c75902</dependsOn>
+    </asset>
+    <asset name="PolicyAction.c69dbfc2-2429-4166-8349-ecb7e7c75902" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API biofarma-pmo-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.48adbc4e-1ce1-41c9-ad1c-51fbb6e6188f" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API biofarma-pmo-people[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.88132899-6217-424e-b357-7fd912613f34" displayName="AccessControlList for asset : mediverse-test-auth" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.e72017b9-c99d-4ef6-98e2-a4fd7db9bf16" displayName="AccessControlList for asset : test-peoples" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.03c7441d-52b9-498f-b2cc-d270bc87ec60" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-master-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.b40dbc81-5441-4302-a759-85767bbc269c" displayName="AccessControlList for asset : biofarma-esb-simulate" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.94254eb9-75b7-4f7c-a6a5-600b04696e9b" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API sampleOne[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.mobileApp" displayName="mobileApp" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="AccessControlList.6441c16a-4bba-4094-8216-6828ace76714" displayName="AccessControlList for asset : kf-7sol-master-user" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.23b37c48-96a7-4f7e-bb84-848b4af34567" displayName="AccessControlList for asset : kf-7sol-trx-point" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.c148e861-e7d5-4b79-a44a-c867836880d0" displayName="kf-7sol-master-vaccine[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.abeb896e-f2ae-4ecd-8bad-289db4e09a04</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.abeb896e-f2ae-4ecd-8bad-289db4e09a04" displayName="Policy For API kf-7sol-master-vaccine[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0f963028-c0d9-4d9d-8f10-de76c270074b</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.1db550e6-0d88-4794-9d01-a5d1530031ef</dependsOn>
+    </asset>
+    <asset name="PolicyAction.1db550e6-0d88-4794-9d01-a5d1530031ef" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-vaccine[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.f11dab42-7119-4bc1-a1bd-f7c08743ed01" displayName="mediverse-ehr-private[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.e0dadf56-9e27-4dfd-8f4d-be21a89d87bc</dependsOn>
+        <dependsOn>APIGateway:Policy.0901fcc8-0207-4bd1-ac37-f9aea961338c</dependsOn>
+        <dependsOn>APIGateway:Policy.a1e286fc-83e0-45d4-8c20-711d99f546cf</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.e0dadf56-9e27-4dfd-8f4d-be21a89d87bc</dependsOn>
+    </asset>
+    <asset name="Policy.a1e286fc-83e0-45d4-8c20-711d99f546cf" displayName="Policy For API mediverse-ehr-private[1.0] Scope [read]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Application.e0dadf56-9e27-4dfd-8f4d-be21a89d87bc" displayName="mediverse-mobile" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.dd3aa430-4445-41e9-b17e-e8165863b25d</dependsOn>
+        <dependsOn>APIGateway:API.f11dab42-7119-4bc1-a1bd-f7c08743ed01</dependsOn>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEYe0dadf56-9e27-4dfd-8f4d-be21a89d87bc</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.e0dadf56-9e27-4dfd-8f4d-be21a89d87bc</dependsOn>
+        <dependsOn>APIGateway:Strategy.409d9f4f-b2ec-4634-962a-851b61fad2fa</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEYe0dadf56-9e27-4dfd-8f4d-be21a89d87bc" displayName="API_ACCESS_KEYe0dadf56-9e27-4dfd-8f4d-be21a89d87bc" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Strategy.409d9f4f-b2ec-4634-962a-851b61fad2fa" displayName="mediverse-auth" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+    </asset>
+    <asset name="RegisteredApplication.e0dadf56-9e27-4dfd-8f4d-be21a89d87bc" displayName="RegisteredApplication [ mediverse-mobile ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="PolicyAction.a8372fea-0766-49b0-baac-2fce11d9fd82" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API kf-7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AccessControlList.761b15ab-7b16-46f8-be17-cd888943b8eb" displayName="AccessControlList for asset : test-publish2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.bfbebda0-d009-4a13-8cd8-2b8a6b3b91df" displayName="AccessControlList for asset : kf-7sol-master-clinic" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.4ceaef56-ad93-49d9-8d4f-3d3612a0fad6" displayName="AccessControlList for asset : biofarma-backend-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.8c845874-77e2-4a08-b3e5-4f4f3c99fdf7" displayName="sys_/sendHsm/{template_name}_post_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="AccessControlList.bc9677c3-5a1d-47b6-b6b3-11d080939cc8" displayName="AccessControlList for asset : 7sol-master-outlet" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.2adf5e45-d1bd-4b64-9fd1-30c972e0b8d8" displayName="sys_/OrganizationByGroup_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="Policy.5d215910-06c9-4428-b8a9-cbc367fea614" displayName="Policy For API kf-7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1b0857ef-f82e-47ba-a70a-f78e8b4e120a</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.91c04e9d-3861-4fb7-be47-5b25b0f9e657</dependsOn>
+    </asset>
+    <asset name="Policy.f1dc1e64-edd4-4423-820a-79b723738d0c" displayName="Policy For API 7sol-oa-pos[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1d9f3d57-855e-45eb-8bfb-0b19d1956539</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f9a12fb0-e9c9-45e0-8010-30588dc20468</dependsOn>
+    </asset>
+    <asset name="AccessControlList.143df7c8-8e3c-467b-a146-7622de8de970" displayName="AccessControlList for asset : kf-7sol-oa-member" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.8c3c83e6-71fb-4f6c-848e-71c349dfdb4d" displayName="Policy For API kf-7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.5644490b-befd-4499-8dfa-fa11bf4d3efd</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6086e384-1a9f-4596-84f1-05ae14f6c40c</dependsOn>
+    </asset>
+    <asset name="PolicyAction.6086e384-1a9f-4596-84f1-05ae14f6c40c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API kf-7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="GatewayScope.43f093df-69fa-4fd3-8af5-94174c001a27" displayName="local:test" isDeployable="true">
+        <implementation.generic type="GatewayScope"/>
+        <dependsOn>APIGateway:API.2ee4d350-d77b-4586-8cc2-6a55d1b532ce</dependsOn>
+        <dependsOn>APIGateway:API.46dddeb3-1f6f-41e8-ad17-5ff7d07e2bb1</dependsOn>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+        <dependsOn>APIGateway:API.907d2a2a-4a79-4392-8739-ecda6a444f68</dependsOn>
+        <dependsOn>APIGateway:API.b90b8b36-e366-4b97-8eea-e66792a90f69</dependsOn>
+    </asset>
+    <asset name="Alias.10faf64d-1c21-47b8-910e-f8b814b52194" displayName="Forgerock" isDeployable="true">
+        <implementation.generic type="Alias"/>
+        <dependsOn>APIGateway:PassmanData.oauth2_introspectionEndpoint_10faf64d-1c21-47b8-910e-f8b814b52194</dependsOn>
+    </asset>
+    <asset name="PassmanData.oauth2_introspectionEndpoint_10faf64d-1c21-47b8-910e-f8b814b52194" displayName="oauth2_introspectionEndpoint_10faf64d-1c21-47b8-910e-f8b814b52194" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="API.39d3c1aa-851f-4bda-9b69-2872da69a8d2" displayName="biofarma-esb-simulator[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.c60349e6-3f32-412c-bccb-d34cf9c9cebe</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.HTTPGlobalIPAccessMode" displayName="HTTPGlobalIPAccessMode" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="API.af2c5050-ec9b-4045-ac51-b90a5bfe3f2c" displayName="kf-7sol-trx-logistic[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.8c3c83e6-71fb-4f6c-848e-71c349dfdb4d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.30b45bea-e6d3-4840-aaa6-aa1876ea2814" displayName="7sol-oa-pos[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.f1dc1e64-edd4-4423-820a-79b723738d0c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.8aa7bdb5-1809-454e-9ab4-b0bd6d9ac76d" displayName="AccessControlList for asset : wa-bisnis" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.51cf2265-76b6-4358-99cc-923c5a06eedb" displayName="AccessControlList for asset : 7sol-trx-logistic" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.1faaa915-1c80-4380-978f-3da18c1cf5eb" displayName="Policy For API kf-7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.6a77c821-c8fe-43db-952d-0a47fea9ff2b</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a8372fea-0766-49b0-baac-2fce11d9fd82</dependsOn>
+    </asset>
+    <asset name="KerberosSettings.kerberosSettings" displayName="KerberosSettings" isDeployable="true">
+        <implementation.generic type="KerberosSettings"/>
+    </asset>
+    <asset name="AccessControlList.bad1c5f0-f5a6-477c-98d2-9b3cd2725430" displayName="AccessControlList for asset : apps-esb" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.47353944-297f-497a-ac8b-876dbc5a2bd2" displayName="AccessControlList for asset : mediverse-telemedicine-public" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.0539cb4b-f33d-42d4-952d-93eb7eea8a4c" displayName="kf-7sol-master-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.8091001f-c39e-43e9-893e-de654b4b3937</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.8091001f-c39e-43e9-893e-de654b4b3937" displayName="Policy For API kf-7sol-master-clinic[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.03c7441d-52b9-498f-b2cc-d270bc87ec60</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8e125501-3bc1-4793-b079-0411ec1ef0ee</dependsOn>
+    </asset>
+    <asset name="Policy.5a3c57b2-23b7-47fb-8b73-f01dd6b1d600" displayName="sys_/_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="API.062c391a-208e-48b3-bcb7-22bccb21c089" displayName="kf-7sol-master-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.51433890-c027-47fb-a605-9a2fd2d0a42d</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.cab1f5ab-01c8-4d47-8dc4-c89890ff3906" displayName="7sol-master-merchandise[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.2ecade30-cc06-4cf8-9a0f-300e593d3d55</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.2ecade30-cc06-4cf8-9a0f-300e593d3d55" displayName="Policy For API 7sol-master-merchandise[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.4e8ffb9d-3e4e-4656-9372-b60cb918c317</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fcacf195-844e-4088-9bd0-2cc3be11b7ec</dependsOn>
+    </asset>
+    <asset name="API.db053e22-702c-4084-b991-f0e14eebe218" displayName="test-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.0fd1a43b-2dc3-4b1d-ad06-4aa76abc6dac</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.9c2157ec-ada4-4e82-94ae-bb66e0cd0f36" displayName="AccessControlList for asset : apps-kfa" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.apiPortalDestinationConfig" displayName="API Portal Events" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="PolicyAction.56b0b649-e79a-4c64-8b72-71b5fc2ab561" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API 7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.aba3cc45-7dc3-4b97-9a0b-488a6007b9b9" displayName="kf-7sol-master-lab[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.d31ee5f2-81cf-4ba4-9981-ad6a573eb3c3</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.73d5444d-21be-4e08-9c14-2217de6985e6" displayName="AccessControlList for asset : 7sol-master-address" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.893852d1-f079-4cf6-aa88-850654f85f01" displayName="AccessControlList for asset : kf-7sol-trx-promotion" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.globalipdos" displayName="Global Denial of Service" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPSListener@5543" displayName="HTTPSListener@5543" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+        <dependsOn>APIGateway:Keystore.DEFAULT_IS_KEYSTORE</dependsOn>
+        <dependsOn>APIGateway:Truststore.DEFAULT_IS_TRUSTSTORE</dependsOn>
+    </asset>
+    <asset name="AccessControlList.8c199407-62b1-4795-a97c-f9d5d7a65269" displayName="AccessControlList for asset : test-import2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.bacce784-e7b3-4160-9a86-6e01f8749508" displayName="AccessControlList for asset : kf-7sol-master-item" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.7d992715-7749-4a0a-a525-0e28dfb7e195" displayName="AccessControlList for asset : 7sol-oa-security" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Policy.3cd45de6-33e4-4a97-a3aa-96b3961ca7a3" displayName="Policy For API 7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.56b0b649-e79a-4c64-8b72-71b5fc2ab561</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cca0020f-9504-4908-ab18-d51fee02095b</dependsOn>
+    </asset>
+    <asset name="AccessControlList.090a4d2e-00b3-4ec7-9ced-3b9bb9c8bf16" displayName="AccessControlList for asset : biofarma-calculator" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.a70d5a09-2239-4e16-ac78-baa170d0cdcf" displayName="AccessControlList for asset : biofarma-people-menu" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.570431c5-4c79-43e2-819a-fef47aedee83" displayName="kf-7sol-trx-homecare[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.ffff09aa-dcbf-405e-8d4c-d863c4dc55cc</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.637449ba-ae4e-415d-93f8-7bc37caef4d6" displayName="kf-7sol-master-user[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.1faaa915-1c80-4380-978f-3da18c1cf5eb</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.0f7e8cbe-3372-45a2-a7be-4bcdc6ddeec0" displayName="Policy For API sampleOne[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.94254eb9-75b7-4f7c-a6a5-600b04696e9b</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.94dd3399-58e6-49b2-9aee-b84abe18c814</dependsOn>
+    </asset>
+    <asset name="AccessControlList.457f224f-0685-4914-ba7f-4f87723a58d6" displayName="AccessControlList for asset : 6d588d84-9a2c-480f-8572-e5b09b736544" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.925dce78-64dc-4db5-ac25-89e6e40ba8ab" displayName="AccessControlList for asset : kf-7sol-trx-logistic" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.8974fe65-2e3a-4a4d-a3c3-c6969661e0a0" displayName="AccessControlList for asset : esb-wa" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PortalGateway.09a5ab37-38c7-4c2a-acbe-a9036949d1b5" displayName="Biofarma_Destinations" isDeployable="true">
+        <implementation.generic type="PortalGateway"/>
+        <dependsOn>APIGateway:PassmanData.09a5ab37-38c7-4c2a-acbe-a9036949d1b5APIPORTAL</dependsOn>
+        <dependsOn>APIGateway:PassmanData.09a5ab37-38c7-4c2a-acbe-a9036949d1b5GATEWAY</dependsOn>
+    </asset>
+    <asset name="PassmanData.09a5ab37-38c7-4c2a-acbe-a9036949d1b5GATEWAY" displayName="09a5ab37-38c7-4c2a-acbe-a9036949d1b5GATEWAY" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="PassmanData.09a5ab37-38c7-4c2a-acbe-a9036949d1b5APIPORTAL" displayName="09a5ab37-38c7-4c2a-acbe-a9036949d1b5APIPORTAL" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Policy.f5731b0d-056f-4371-a3c1-024f25913338" displayName="Policy For API kf-7sol-2pl[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.23ce012d-5a14-4e09-bdb5-dc8b45ad53d7</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8693c38a-a612-4845-a597-e1fc368e72d5</dependsOn>
+    </asset>
+    <asset name="API.4b87ba25-c05a-4ccb-8926-36207779bc8c" displayName="kf-7sol-trx-point[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.0800ceb9-1585-4ec1-b174-098218adb720</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Truststore.DEFAULT_JVM_TRUSTSTORE" displayName="DEFAULT_JVM_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="Truststore"/>
+        <dependsOn>APIGateway:PassmanData.wm.security.keystore.DEFAULT_JVM_TRUSTSTORE</dependsOn>
+    </asset>
+    <asset name="PassmanData.wm.security.keystore.DEFAULT_JVM_TRUSTSTORE" displayName="wm.security.keystore.DEFAULT_JVM_TRUSTSTORE" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="AccessControlList.5cc44399-985d-426a-bb82-29575519fb1d" displayName="AccessControlList for asset : biofarma-ehr" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.a4964d00-bc14-4493-a13d-81901211cfe5" displayName="AccessControlList for asset : biofarma-people-user" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="Alias.OKTA" displayName="OKTA" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@5555" displayName="HTTPListener@5555" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Application.64569561-5944-4020-8e42-38116e7df24b" displayName="apps-test2" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEY64569561-5944-4020-8e42-38116e7df24b</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.64569561-5944-4020-8e42-38116e7df24b</dependsOn>
+        <dependsOn>APIGateway:Strategy.caa640b0-ed8f-4389-800f-f1d8c89710bc</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEY64569561-5944-4020-8e42-38116e7df24b" displayName="API_ACCESS_KEY64569561-5944-4020-8e42-38116e7df24b" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="Strategy.caa640b0-ed8f-4389-800f-f1d8c89710bc" displayName="test" isDeployable="true">
+        <implementation.generic type="Strategy"/>
+    </asset>
+    <asset name="RegisteredApplication.64569561-5944-4020-8e42-38116e7df24b" displayName="RegisteredApplication [ apps-test2 ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+    <asset name="AdministratorSetting.errorProcessing" displayName="Service fault" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Policy.2f146c9d-a398-43a6-91c8-f8e4eb706717" displayName="sys_/auth_get_scopePolicy" isDeployable="true">
+        <implementation.generic type="Policy"/>
+    </asset>
+    <asset name="API.8ed11e0d-f6f3-483b-98ab-14f5ef2ef223" displayName="7sol-trx-payment[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.cacd054f-036e-4c27-88e0-3594cb782650</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.cacd054f-036e-4c27-88e0-3594cb782650" displayName="Policy For API 7sol-trx-payment[1.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.3df70db2-0c50-4349-b854-b9005b4ea375</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c6dcb1f4-e021-420c-b325-b46fa9678fe7</dependsOn>
+    </asset>
+    <asset name="API.aa304676-c78a-4af6-aeeb-ddfbdad1b845" displayName="kf-7sol-vaccine-reservation[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.c3cfa909-c053-4278-b037-cc61c515a69f</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.326bab61-acf5-4a70-be7f-7aa0f7170b6d" displayName="AccessControlList for asset : kf-7sol-master-promotion" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.69e8ac1b-6a56-41dd-84a9-b2de8809f692" displayName="7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.3cd45de6-33e4-4a97-a3aa-96b3961ca7a3</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.5ad58344-4920-4ca6-ab99-d0229150e2fd" displayName="biofarma-pmo-people[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.223f549c-2de2-4b50-bf1e-6ded427fef72</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.af0a394c-4459-4560-89e6-7be46f3d9d2e" displayName="AccessControlList for asset : kf-7sol-trx-clinic" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.04657345-f714-4133-82f8-a0cf643ecfd5" displayName="AccessControlList for asset : kf-7sol-master-homecare" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.33d26a05-cf60-4b4d-b71a-35a9f8f9657f" displayName="kf-7sol-default[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.5d215910-06c9-4428-b8a9-cbc367fea614</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.7e4e16a6-f582-404f-886f-04ae1b9f2055" displayName="AccessControlList for asset : biofarma-esb-calculator" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.52fbeaf9-a828-4832-bbe6-a7a33eed02ef" displayName="AccessControlList for asset : kf-7sol-vaccine-reservation-v2" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b1063821-5f28-4291-bdd4-863d2e318046" displayName="AccessControlList for asset : bf-smart-retail" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.b5d8d27c-9587-42a0-93dc-683de41e6361" displayName="AccessControlList for asset : medverse-ehr" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.aa275724-2023-49af-a649-e85c60f594ad" displayName="wa-bisnis[1.1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.b8d6b9be-e2ab-4670-b797-75145645c792</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.26d4eda5-8a03-4cc8-aa6a-4fe5b4db1aac" displayName="AccessControlList for asset : biofarma-hcm-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="JmsConnectionAlias.DEFAULT_IS_JMS_CONNECTION" displayName="DEFAULT_IS_JMS_CONNECTION" isDeployable="true">
+        <implementation.generic type="JmsConnectionAlias"/>
+        <dependsOn>APIGateway:JndiProviderAlias.DEFAULT_IS_JNDI_PROVIDER</dependsOn>
+    </asset>
+    <asset name="Group.Everybody" displayName="Everybody" isDeployable="true">
+        <implementation.generic type="Group"/>
+    </asset>
+    <asset name="Policy.ef8bc702-63b3-48d9-b73e-3da320f99db5" displayName="Draft Global Policy Dev[Global Policy]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.1c74a983-0a63-44cd-aacb-b277590c2992</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.76671dde-b6d7-4b67-9271-b441cde067df</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.823329b6-fd4f-4a33-9762-96ac48b6f32a</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.894b5f82-0abd-4006-8933-08cab144bd5d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.a85bc84a-d80a-4735-8084-31e07c7110e4</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f5f3457b-7217-489d-a28c-f997479c0408</dependsOn>
+    </asset>
+    <asset name="PolicyAction.823329b6-fd4f-4a33-9762-96ac48b6f32a" displayName="Policy Action [Validate API Specification] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.a85bc84a-d80a-4735-8084-31e07c7110e4" displayName="Policy Action [Outbound Auth - Transport] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.76671dde-b6d7-4b67-9271-b441cde067df" displayName="Policy Action [Monitor Performance] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.1c74a983-0a63-44cd-aacb-b277590c2992" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Draft Global Policy Dev" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.d3e1ca3e-5b78-4dcd-888d-c595a7084053" displayName="medverse-ehr[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.cee7390b-8c2e-40f0-983c-a9ed35de2c7e</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Alias.PingFederate" displayName="PingFederate" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+    <asset name="API.e16ff252-a694-4ae4-b6cd-48ad95d342fb" displayName="kf-7sol-2pl[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.f5731b0d-056f-4371-a3c1-024f25913338</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.90e71a67-f4db-4061-9408-47b08786c235" displayName="AccessControlList for asset : biofarma-backend_finance" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.a4557819-d7de-4005-8e9f-351cf8f2fe61" displayName="sampleOne[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.0f7e8cbe-3372-45a2-a7be-4bcdc6ddeec0</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.9cbc6be8-2256-4efd-b517-77505025eaac" displayName="AccessControlList for asset : biofarma-hcm-people" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="API.eac35784-411e-4d6c-b6e3-df64865939f6" displayName="json-api[1.0.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.d1389f0c-a500-4dbd-ac90-c30f5d557a7f</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.62313341-f75c-439c-856b-165ac1331d41" displayName="AccessControlList for asset : 7sol-master-merchandise" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.d31a3e69-66c5-4025-ae74-e57b411d35a0" displayName="AccessControlList for asset : 7sol-trx-payment" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="PolicyAction.1a2170cf-f826-4a8a-93f6-04b8a922a51b" displayName="Monitor Performance" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.958c59dc-8c5a-42e1-9cfc-22302378e2df" displayName="kf-7sol-trx-promotion[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.41626cf6-d036-499b-8acf-f2b0fdb9d7b4</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.9cbe342b-1cc0-4853-8e68-a887de2c763d" displayName="AccessControlList for asset : 7sol-oa-messenger" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessControlList.0821878a-15b1-4c5b-8f05-3425331eb432" displayName="AccessControlList for asset : test-file-wsdl" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.settings" displayName="settings" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="AccessControlList.933f439d-04a2-45f9-ba91-d2beb7264469" displayName="AccessControlList for asset : tes" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+    <asset name="AccessProfile.API-Gateway-Providers" displayName="API-Gateway-Providers" isDeployable="true">
+        <implementation.generic type="AccessProfile"/>
+    </asset>
+    <asset name="GatewayScope.d184ab16-d8b2-441e-9901-1105a93157b4" displayName="local:esb" isDeployable="true">
+        <implementation.generic type="GatewayScope"/>
+        <dependsOn>APIGateway:API.26df21bc-0bef-47d3-ab7d-571ecb1187d4</dependsOn>
+        <dependsOn>APIGateway:API.2ee4d350-d77b-4586-8cc2-6a55d1b532ce</dependsOn>
+        <dependsOn>APIGateway:API.52c564f2-5eaf-45cf-af22-967427be59e2</dependsOn>
+        <dependsOn>APIGateway:API.5b06566b-6210-442e-b0c9-7d266ff3519e</dependsOn>
+        <dependsOn>APIGateway:API.907d2a2a-4a79-4392-8739-ecda6a444f68</dependsOn>
+        <dependsOn>APIGateway:API.f71f9f0d-6660-4f64-b669-65cdcbe7a41a</dependsOn>
+    </asset>
+    <asset name="API.83337fa0-3254-44c9-96dd-494194d48f9f" displayName="Test-Customer[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.bc116ba1-b182-429d-a8d1-081373ed65c4</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="API.db051c2f-8347-479e-89c0-9534d90c4455" displayName="kf-7sol-master-outlet[1.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.13423dc2-1b0c-4b31-9941-7515f6cd1dd5</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="AccessControlList.3f438f7e-5cfc-41a3-948c-bd43f910fa47" displayName="AccessControlList for asset : test" isDeployable="true">
+        <implementation.generic type="AccessControlList"/>
+        <dependsOn>APIGateway:AccessProfile.Administrators</dependsOn>
+        <dependsOn>APIGateway:AccessProfile.Default</dependsOn>
+    </asset>
+</asset_composite>
