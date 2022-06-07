@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'ssh -tt wmadmin@10.68.128.3'
+                sh 'ssh -tt wmadmin@10.68.128.3 yes'
             }
         }
         stage('Test') {
