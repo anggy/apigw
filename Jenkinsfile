@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                ssh wmadmin@35.219.114.242 '/opt/softwareag/common/AssetBuildEnvironment/bin/build.sh'
+                sh 'ssh wmadmin@35.219.114.242 /opt/softwareag/common/AssetBuildEnvironment/bin/build.sh'
             }
         }
         stage('Test') {
