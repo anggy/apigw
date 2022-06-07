@@ -5,6 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                cd /opt/softwareag/common/AssetBuildEnvironment/bin/
+                sh build.sh -Dbuild.output.dir=/opt/image/assets/ -Dapigateway.is.url=https://35.219.114.242:5543 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123 -Dapigateway.assets.file=/opt/image/assets/artifacts/asset.json
             }
         }
         stage('Test') {
@@ -15,6 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                cd /opt/softwareag/IntegrationServer/instances/default/packages/WmDeployer/bin/                
             }
         }
     }
