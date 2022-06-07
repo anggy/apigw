@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh('ssh wmadmin@35.219.114.242')
                 sh('./build.sh -Dbuild.output.dir=/opt/image/assets/ -Dapigateway.is.url=http://35.219.114.242:5555 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123 -Dapigateway.assets.file=/opt/image/assets/artifacts/asset.json')
                 sh('./build.sh -Dbuild.output.dir=/opt/image/assets/  -Dapigateway.repo.createFromLocalRepo=true -Dapigateway.repo.localRepo.path=/opt/image/localvcs/ -Dapigateway.is.url=http://35.219.114.242:5555 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123')
             }
