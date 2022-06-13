@@ -1,1 +1,7 @@
-{}
+{
+        "types": ["api"],
+        "scope": [{
+                "attributeName":"apiName",
+                "keyword":"petstore"
+        }]
+}
