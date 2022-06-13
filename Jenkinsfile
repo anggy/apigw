@@ -4,6 +4,7 @@ pipeline {
         stage('Continuos Deployment') {
             steps {
                 echo 'Starting Continuos Deployment..'   
+				sh('wget -O asset.json https://raw.githubusercontent.com/anggy/apigw/main/artifacts/asset.json')
 				sh('ssh -tt wmadmin@10.68.128.3 /opt/softwareag/common/AssetBuildEnvironment/bin/build.sh -Dbuild.output.dir=/opt/image/assets/  -Dapigateway.repo.createFromLocalRepo=true -Dapigateway.repo.localRepo.path=/opt/image/localvcs/ -Dapigateway.is.url=http://35.219.114.242:5555 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123')
 				echo 'CD Started.'   				
             }
@@ -11,7 +12,7 @@ pipeline {
         stage('Build Asset Environment') {
             steps {
                 echo 'Starting Build Asset Environment..'
-				sh('ssh -tt wmadmin@10.68.128.3 /opt/softwareag/common/AssetBuildEnvironment/bin/build.sh -Dbuild.output.dir=/opt/image/assets/ -Dapigateway.is.url=http://35.219.114.242:5555 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123 -Dapigateway.assets.file=https://raw.githubusercontent.com/anggy/apigw/main/artifacts/asset.json')
+				sh('ssh -tt wmadmin@10.68.128.3 /opt/softwareag/common/AssetBuildEnvironment/bin/build.sh -Dbuild.output.dir=/opt/image/assets/ -Dapigateway.is.url=http://35.219.114.242:5555 -Dapigateway.is.username=Administrator -Dapigateway.is.password=biofarma123 -Dapigateway.assets.file=/opt/image/assets/artifacts/asset.json')
 				echo 'ABE Completed.'
             }
         }
