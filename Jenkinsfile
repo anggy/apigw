@@ -4,7 +4,7 @@ pipeline {
         stage('Continuos Deployment') {
             steps {
                 echo 'Starting Continuos Deployment..' 
-				sh('ssh  wmadmin@35.219.114.242 "wget -O /opt/image/assets/artifacts/asset.json https://raw.githubusercontent.com/anggy/apigw/main/artifacts/asset.json"')
+				sh('ssh  wmadmin@10.68.128.3 "wget -O /opt/image/assets/artifacts/asset.json https://raw.githubusercontent.com/anggy/apigw/main/artifacts/asset.json"')
 				echo 'CD Started.'   				
             }
         }
